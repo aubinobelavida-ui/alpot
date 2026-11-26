@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs';
+import os from 'os';
 // Using Node.js 22+ native SQLite DatabaseSync
 import { DatabaseSync } from 'node:sqlite';
 
@@ -8,17 +9,37 @@ let dbInstance: DatabaseSync | null = null;
 export function getDb(): DatabaseSync {
   if (dbInstance) return dbInstance;
 
-  const dbDir = path.join(process.cwd(), 'data');
-  if (!fs.existsSync(dbDir)) {
-    fs.mkdirSync(dbDir, { recursive: true });
+  // On Vercel / serverless environment, process.cwd() is read-only (/var/task).
+  // We must fall back to os.tmpdir() (/tmp), which is the only writable directory on AWS Lambda.
+  let dbDir: string;
+  try {
+    const localDir = path.join(process.cwd(), 'data');
+    if (!fs.existsSync(localDir)) {
+      fs.mkdirSync(localDir, { recursive: true });
+    }
+    // Test write permission
+    const testFile = path.join(localDir, '.write-test');
+    fs.writeFileSync(testFile, '');
+    fs.unlinkSync(testFile);
+    dbDir = localDir;
+  } catch {
+    // Read-only filesystem detected (Vercel / Lambda) -> fall back to /tmp
+    dbDir = path.join(os.tmpdir(), 'helpot-data');
+    if (!fs.existsSync(dbDir)) {
+      fs.mkdirSync(dbDir, { recursive: true });
+    }
   }
 
   const dbPath = path.join(dbDir, 'helpot.db');
   const db = new DatabaseSync(dbPath);
   
   // Enable WAL mode & foreign keys
-  db.exec('PRAGMA journal_mode = WAL;');
-  db.exec('PRAGMA foreign_keys = ON;');
+  try {
+    db.exec('PRAGMA journal_mode = WAL;');
+    db.exec('PRAGMA foreign_keys = ON;');
+  } catch {
+    // Ignore if WAL pragma is not supported on ephemeral /tmp
+  }
 
   initSchema(db);
   seedInitialData(db);
