@@ -230,6 +230,145 @@ export default function SectionRenderer({
         </div>
       )}
 
+      {/* E-COMMERCE PRODUCTS GRID */}
+      {section.type === 'products_grid' && (
+        <div 
+          className="py-16 sm:py-24"
+          style={{ 
+            backgroundColor: styles.bgColor || '#ffffff',
+            color: styles.textColor || '#111827'
+          }}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            <div className="text-center max-w-2xl mx-auto space-y-2">
+              {settings.tagline && (
+                <span 
+                  className="text-xs font-bold uppercase tracking-widest"
+                  style={{ color: primaryColor }}
+                >
+                  {settings.tagline}
+                </span>
+              )}
+              <h2 
+                className="text-3xl font-extrabold"
+                style={{ color: styles.textColor || '#0f172a' }}
+              >
+                {settings.heading || 'Nos Produits & Équipements'}
+              </h2>
+              <p className="text-sm text-slate-500">
+                {settings.description || 'Sélectionnés pour leur haute fiabilité et performance.'}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {((siteData?.products && siteData.products.length > 0) ? siteData.products : (settings.items || [
+                {
+                  id: 'fallback-1',
+                  title: 'Produit Vedette Haut de Gamme',
+                  price: 299.00,
+                  description: 'Performances certifiées et matériaux haute résistance.',
+                  image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80',
+                  stock: 12
+                },
+                {
+                  id: 'fallback-2',
+                  title: 'Pack Pro Complet Clé en Main',
+                  price: 489.00,
+                  description: 'La solution tout-en-un plébiscitée par nos clients.',
+                  image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80',
+                  stock: 5
+                },
+                {
+                  id: 'fallback-3',
+                  title: 'Accessoire Essentiel Renforcé',
+                  price: 79.90,
+                  description: 'Durabilité éprouvée pour un usage intensif.',
+                  image: 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80',
+                  stock: 20
+                }
+              ])).map((prod: any, idx: number) => {
+                const prodImg = prod.images_json 
+                  ? (JSON.parse(prod.images_json)[0] || prod.image) 
+                  : (prod.image || 'https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=800&q=80');
+
+                return (
+                  <div 
+                    key={prod.id || idx} 
+                    className="group flex flex-col bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg"
+                    style={{
+                      backgroundColor: styles.cardBgColor || '#ffffff',
+                      borderColor: styles.cardBorderColor || '#e2e8f0'
+                    }}
+                  >
+                    <div className="aspect-[4/3] bg-slate-100 overflow-hidden relative">
+                      <img 
+                        src={prodImg} 
+                        alt={prod.title} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                      />
+                      {prod.stock > 0 && prod.stock <= 8 && (
+                        <span className="absolute top-3 right-3 bg-amber-500 text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                          Dernières pièces
+                        </span>
+                      )}
+                      {prod.is_featured ? (
+                        <span 
+                          className="absolute top-3 left-3 text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm"
+                          style={{ backgroundColor: primaryColor }}
+                        >
+                          Best-Seller
+                        </span>
+                      ) : null}
+                    </div>
+                    <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+                            {prod.category_name || 'Rayon Boutique'}
+                          </span>
+                          <span className="text-xs font-bold text-emerald-600 flex items-center gap-1">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                            En stock
+                          </span>
+                        </div>
+                        <h3 
+                          className="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-1"
+                          style={{ color: styles.cardTextColor || '#0f172a' }}
+                        >
+                          {prod.title}
+                        </h3>
+                        <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                          {prod.description}
+                        </p>
+                      </div>
+
+                      <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                          <span className="text-xs text-slate-400 block font-medium">Prix TTC</span>
+                          <span 
+                            className="text-xl font-extrabold text-slate-900 tracking-tight"
+                            style={{ color: styles.cardTextColor || '#0f172a' }}
+                          >
+                            {Number(prod.price).toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €
+                          </span>
+                        </div>
+                        <button
+                          className="px-4 py-2.5 rounded-xl text-white text-xs font-bold shadow-md flex items-center gap-1.5 transition-all hover:scale-105"
+                          style={{ backgroundColor: primaryColor }}
+                        >
+                          <ShoppingBag className="w-3.5 h-3.5" />
+                          <span>Ajouter</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+
       {section.type === 'testimonials' && (
         <div className="py-16 sm:py-24 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">

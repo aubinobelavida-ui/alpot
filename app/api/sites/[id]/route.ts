@@ -34,12 +34,27 @@ export async function GET(
       ORDER BY sort_order ASC
     `).all(id) as any[];
 
+    // Business catalog & services available in this site instance
+    const products = db.prepare(`
+      SELECT * FROM site_products
+      WHERE site_id = ?
+      ORDER BY is_featured DESC, title ASC
+    `).all(id) as any[];
+
+    const services = db.prepare(`
+      SELECT * FROM site_services
+      WHERE site_id = ?
+      ORDER BY title ASC
+    `).all(id) as any[];
+
     return NextResponse.json({
       site: {
         ...site,
         globalTheme: site.global_theme_json ? JSON.parse(site.global_theme_json) : {},
         seoMeta: site.seo_meta_json ? JSON.parse(site.seo_meta_json) : {},
-        companyInfo: site.company_info_json ? JSON.parse(site.company_info_json) : {}
+        companyInfo: site.company_info_json ? JSON.parse(site.company_info_json) : {},
+        products,
+        services
       },
       pages
     });

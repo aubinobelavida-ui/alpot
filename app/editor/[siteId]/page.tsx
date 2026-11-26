@@ -569,7 +569,8 @@ function VisualEditorContent() {
                 section={section}
                 isSelected={section.id === selectedSectionId}
                 onSelect={() => setSelectedSectionId(section.id)}
-                siteTheme={site.globalTheme}
+                siteTheme={site?.globalTheme}
+                siteData={{ products: site?.products || [], services: site?.services || [] }}
                 isEditor={true}
               />
             ))}
@@ -618,6 +619,45 @@ function VisualEditorContent() {
                       rows={2}
                       value={selectedSection.settings.title || ''}
                       onChange={(e) => updateSelectedSetting('title', e.target.value)}
+                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs outline-none focus:border-blue-500"
+                    />
+                  </div>
+                )}
+
+                {/* Heading / Titre de section pour les grilles */}
+                {selectedSection.settings.heading !== undefined && (
+                  <div>
+                    <label className="block font-bold text-slate-700 mb-1">Titre de la section</label>
+                    <input
+                      type="text"
+                      value={selectedSection.settings.heading || ''}
+                      onChange={(e) => updateSelectedSetting('heading', e.target.value)}
+                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs outline-none focus:border-blue-500 font-medium"
+                    />
+                  </div>
+                )}
+
+                {/* Tagline / Sur-titre */}
+                {selectedSection.settings.tagline !== undefined && (
+                  <div>
+                    <label className="block font-bold text-slate-700 mb-1">Sur-titre (Tagline)</label>
+                    <input
+                      type="text"
+                      value={selectedSection.settings.tagline || ''}
+                      onChange={(e) => updateSelectedSetting('tagline', e.target.value)}
+                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs outline-none focus:border-blue-500 uppercase font-mono"
+                    />
+                  </div>
+                )}
+
+                {/* Description de section */}
+                {selectedSection.settings.description !== undefined && (
+                  <div>
+                    <label className="block font-bold text-slate-700 mb-1">Description</label>
+                    <textarea
+                      rows={2}
+                      value={selectedSection.settings.description || ''}
+                      onChange={(e) => updateSelectedSetting('description', e.target.value)}
                       className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs outline-none focus:border-blue-500"
                     />
                   </div>
@@ -830,6 +870,24 @@ function VisualEditorContent() {
               >
                 <div className="font-bold text-sm text-slate-900">Formulaire de Contact / Devis</div>
                 <p className="text-xs text-slate-500">Champs nom, email, téléphone et message reliés au CRM.</p>
+              </button>
+
+              {/* Widget 7: E-commerce Products Grid */}
+              <button
+                onClick={() => handleAddSection(
+                  'products_grid',
+                  'Catalogue Produits',
+                  { 
+                    tagline: 'BOUTIQUE EN LIGNE', 
+                    heading: 'Nos Produits Phares', 
+                    description: 'Découvrez notre sélection d’articles disponibles en stock avec livraison rapide.' 
+                  },
+                  { bgColor: '#ffffff' }
+                )}
+                className="p-4 text-left rounded-2xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 transition-all space-y-1"
+              >
+                <div className="font-bold text-sm text-slate-900">Grille de Produits E-commerce</div>
+                <p className="text-xs text-slate-500">Vitrine produits connectée au catalogue avec badges et panier.</p>
               </button>
             </div>
           </div>
