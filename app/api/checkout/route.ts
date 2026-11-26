@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getDb } from '@/lib/db';
+import { getDb, getDemoProductsForTemplate, getDemoServicesForTemplate } from '@/lib/db';
 import { getCurrentUser, hashPassword, signToken } from '@/lib/auth';
 import { cookies } from 'next/headers';
 
@@ -157,60 +157,44 @@ export async function POST(request: Request) {
       }
 
       // Provision sample business data tailored to the template theme
-      if (tpl.id === 'tpl-gamingbm-esport') {
-        db.prepare(`
-          INSERT INTO site_products (id, site_id, title, slug, description, price, stock, is_featured)
-          VALUES 
-          ('prod-1-' || ?, ?, 'PC Gamer Cyber Titan - RTX 4080 & i9', 'pc-gamer-cyber-titan', 'Config esport ultra puissante, 32GB DDR5, SSD NVMe 2TB, Watercooling 360mm RGB.', 1999.00, 8, 1),
-          ('prod-2-' || ?, ?, 'Clavier Mécanique RGB Hot-Swap', 'clavier-mecanique-rgb', 'Switches optiques ultra-rapides, châssis aluminium brossé et repose-poignet magnétique.', 129.90, 25, 1),
-          ('prod-3-' || ?, ?, 'Écran Esport 240Hz 27" Fast IPS', 'ecran-esport-240hz', 'Résolution QHD 1440p, temps de réponse 0.5ms, compatible G-Sync et HDR400.', 349.00, 15, 1)
-        `).run(siteId, siteId, siteId, siteId, siteId, siteId);
-      } else if (tpl.id === 'tpl-topgart-garden') {
-        db.prepare(`
-          INSERT INTO site_products (id, site_id, title, slug, description, price, stock, is_featured)
-          VALUES 
-          ('prod-1-' || ?, ?, 'Tronçonneuse Thermique Pro 52cc - Guide 50cm', 'tronconneuse-pro-52cc', 'Moteur 2-temps haute compression, système de démarrage facile EasyStart et double frein de chaîne.', 249.00, 14, 1),
-          ('prod-2-' || ?, ?, 'Tondeuse Autotractée Mulching 160cc', 'tondeuse-autotractee-160cc', 'Largeur de coupe 51cm, carter acier renforcé, bac de ramassage 65L et fonction éjection latérale.', 429.00, 6, 1),
-          ('prod-3-' || ?, ?, 'Taille-Haie Sans Fil 20V Lithium', 'taille-haie-sans-fil-20v', 'Lame double action découpée au laser 55cm, autonomie 90 min et poignée rotative 180°.', 119.00, 20, 1)
-        `).run(siteId, siteId, siteId, siteId, siteId, siteId);
-      } else if (tpl.id === 'tpl-shopelios-energy') {
-        db.prepare(`
-          INSERT INTO site_products (id, site_id, title, slug, description, price, stock, is_featured)
-          VALUES 
-          ('prod-1-' || ?, ?, 'Palette de Granulés de Bois DINplus (66 sacs)', 'palette-pellets-66-sacs', '100% résineux haute performance, pouvoir calorifique > 4.9 kWh/kg, taux de cendre < 0.5%. Livraison avec déchargement.', 419.00, 30, 1),
-          ('prod-2-' || ?, ?, 'Bûches de Bois Compressé Jour (Pack 96 bûches)', 'buches-bois-compresse', '100% chêne et hêtre compressés sans colle ni additif. Combustion longue durée 2h par bûche.', 389.00, 20, 1),
-          ('prod-3-' || ?, ?, 'Sac de Granulés à l’Unité 15kg ENplus A1', 'sac-pellets-15kg', 'Pratique pour appoint ou tester la qualité de notre bois avant commande de palette.', 7.90, 150, 0)
-        `).run(siteId, siteId, siteId, siteId, siteId, siteId);
-      } else if (tpl.id === 'tpl-lenha-design') {
-        db.prepare(`
-          INSERT INTO site_products (id, site_id, title, slug, description, price, stock, is_featured)
-          VALUES 
-          ('prod-1-' || ?, ?, 'Poêle à Granulés Scandinave Oslo 8.5 kW', 'poele-granules-oslo', 'Design épuré en fonte et acier corten, programmation Wi-Fi et réservoir 22kg silencieux.', 2490.00, 5, 1),
-          ('prod-2-' || ?, ?, 'Poêle à Bois Contemporain Vitre Galbée', 'poele-bois-vitre-galbee', 'Rendement exceptionnel 82%, label Flamme Verte 7 étoiles, double combustion propre.', 1850.00, 7, 1),
-          ('prod-3-' || ?, ?, 'Serviteur de Cheminée 4 Accessoires Acier Noir', 'serviteur-cheminee-acier', 'Pinces, balai, pelle et tisonnier design sur pied lourd antidérapant.', 149.00, 18, 1)
-        `).run(siteId, siteId, siteId, siteId, siteId, siteId);
-      } else if (tpl.id === 'tpl-hlg-appliances') {
-        db.prepare(`
-          INSERT INTO site_products (id, site_id, title, slug, description, price, stock, is_featured)
-          VALUES 
-          ('prod-1-' || ?, ?, 'Four Encastrable Pyrolyse Chaleur Tournante Inox', 'four-pyrolyse-inox', 'Volume XXL 73L, 12 modes de cuisson assistée, porte froide 4 vitres et fermeture douce.', 599.00, 10, 1),
-          ('prod-2-' || ?, ?, 'Réfrigérateur Combiné Total NoFrost 360L', 'refrigerateur-nofrost-360l', 'Compartiment fraîcheur 0°C pour viandes/poissons, compresseur inverter silencieux 35dB.', 749.00, 6, 1),
-          ('prod-3-' || ?, ?, 'Lave-Linge Induction Silencieux 9kg A+++', 'lave-linge-induction-9kg', 'Programme vapeur anti-allergies, pesée automatique et départ différé 24h.', 499.00, 12, 1)
-        `).run(siteId, siteId, siteId, siteId, siteId, siteId);
-      } else if (tpl.type === 'ECOMMERCE' || tpl.type === 'HYBRID') {
-        db.prepare(`
-          INSERT INTO site_products (id, site_id, title, slug, description, price, stock, is_featured)
-          VALUES 
-          ('prod-1-' || ?, ?, 'Produit Signature Prestige', 'produit-signature', 'Excellence des matériaux et finition soignée.', 49.90, 25, 1),
-          ('prod-2-' || ?, ?, 'Édition Spéciale Atelier', 'edition-speciale', 'Série limitée conçue avec passion.', 79.00, 12, 1)
-        `).run(siteId, siteId, siteId, siteId);
+      const demoProds = getDemoProductsForTemplate(tpl.id);
+      const demoSrvs = getDemoServicesForTemplate(tpl.id);
+
+      if (tpl.type === 'ECOMMERCE' || tpl.type === 'HYBRID') {
+        const insertProd = db.prepare(`
+          INSERT INTO site_products (id, site_id, title, slug, description, price, stock, is_featured, images_json, category_name)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `);
+        for (const p of demoProds) {
+          insertProd.run(
+            `prod-${siteId}-${p.slug || Math.random().toString(36).substring(2, 6)}`,
+            siteId,
+            p.title,
+            p.slug,
+            p.description,
+            p.price,
+            p.stock,
+            p.is_featured,
+            JSON.stringify([p.image]),
+            p.category_name
+          );
+        }
       } else {
-        db.prepare(`
+        const insertSrv = db.prepare(`
           INSERT INTO site_services (id, site_id, title, description, icon, price_starting_at, duration)
-          VALUES 
-          ('srv-1-' || ?, ?, 'Prestation Personnalisée & Conseil', 'Étude complète de vos besoins avec devis détaillé sous 24h.', 'Compass', 150, '1 jour'),
-          ('srv-2-' || ?, ?, 'Réalisation Complète Clé en Main', 'Prise en charge intégrale de la conception à la pose finale.', 'Award', 1200, '1 semaine')
-        `).run(siteId, siteId, siteId, siteId);
+          VALUES (?, ?, ?, ?, ?, ?, ?)
+        `);
+        for (const s of demoSrvs) {
+          insertSrv.run(
+            `srv-${siteId}-${Math.random().toString(36).substring(2, 6)}`,
+            siteId,
+            s.title,
+            s.description,
+            s.icon,
+            s.price_starting_at,
+            s.duration
+          );
+        }
       }
 
       createdSites.push({

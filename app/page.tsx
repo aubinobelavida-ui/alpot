@@ -14,7 +14,8 @@ import {
   ExternalLink,
   Zap,
   Sliders,
-  Check
+  Check,
+  Eye
 } from 'lucide-react';
 import { getDb } from '@/lib/db';
 
@@ -301,13 +302,21 @@ export default async function HomePage({
                   </div>
 
                   {/* Actions */}
-                  <div className="pt-2 border-t border-slate-100 flex items-center justify-between gap-3">
+                  <div className="pt-3 border-t border-slate-100 flex items-center gap-2">
+                    <Link
+                      href={`/preview/${tpl.id}`}
+                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-blue-50 hover:bg-blue-600 text-blue-700 hover:text-white font-semibold text-xs sm:text-sm border border-blue-200/80 hover:border-blue-600 transition-all shadow-sm group/btn"
+                      title="Explorer la démo en direct multi-pages"
+                    >
+                      <Eye className="w-3.5 h-3.5 text-blue-600 group-hover/btn:text-white transition-colors" />
+                      <span>Démo direct</span>
+                    </Link>
                     <Link
                       href={`/templates/${tpl.id}`}
-                      className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-semibold text-sm transition-colors shadow-sm"
+                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs sm:text-sm transition-colors shadow-sm"
                     >
-                      <span>Découvrir le template</span>
-                      <ArrowRight className="w-4 h-4" />
+                      <span>Fiche & Achat</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
                 </div>

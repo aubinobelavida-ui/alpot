@@ -377,9 +377,9 @@ function seedInitialData(db: DatabaseSync) {
   const templates = [
     {
       id: 'tpl-woodcraft-pro',
-      name: 'Atelier WoodCraft — Menuiserie & Agencement',
-      slug: 'atelier-woodcraft-menuiserie',
-      headline: 'Sublimez vos créations bois avec une vitrine chaleureuse, portfolio et devis en ligne.',
+      name: 'SYLVA — Artisanat & Bois',
+      slug: 'sylva-artisanat-bois',
+      headline: 'L’univers de l’ébénisterie d’art : agencements sur-mesure, cuisines nobles et mobilier contemporain.',
       description: 'Conçu sur-mesure pour les artisans menuisiers, ébénistes et décorateurs d’intérieur. Présentez vos essences nobles, vos réalisations phares, vos tarifs indicatifs et recueillez des demandes de devis qualifiées en toute simplicité.',
       price: 189.00,
       category_id: 'metiers-artisanat',
@@ -406,9 +406,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-luxe-barber',
-      name: 'Gentleman Barber — Salon & Soins Homme',
-      slug: 'gentleman-barber-salon',
-      headline: 'Ambiance feutrée, prise de rendez-vous fluide et boutique de soins capillaires.',
+      name: 'BARON — Soins & Barbier',
+      slug: 'baron-soins-barbier',
+      headline: 'L’univers du soin masculin d’élite : coupes précises, rituels barbe à l’ancienne et cosmétiques botaniques.',
       description: 'L’élégance vintage et moderne réunie pour les barbiers et salons de coiffure masculine haut de gamme. Intègre la présentation de l’équipe, la carte des prestations avec durée/tarifs et la vente de produits capillaires.',
       price: 199.00,
       category_id: 'metiers-artisanat',
@@ -434,9 +434,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-juris-lex',
-      name: 'JurisLex — Cabinet d’Avocats & Conseil Juridique',
-      slug: 'jurislex-cabinet-avocats',
-      headline: 'Rigueur, prestige et autorité pour cabinets juridiques et experts du droit.',
+      name: 'JUSTICIA — Droit & Conseil',
+      slug: 'justicia-droit-conseil',
+      headline: 'L’univers du conseil juridique et contentieux : rigueur, prestige et accompagnement confidentiel.',
       description: 'Une identité visuelle sobre et percutante qui inspire la plus grande confiance. Développé pour mettre en valeur les domaines d’expertise juridique, les associés, les publications légales et faciliter la prise de premier contact confidentiel.',
       price: 249.00,
       category_id: 'services-pro',
@@ -461,9 +461,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-zen-spa',
-      name: 'Aura Zen — Spa & Institut Bien-Être Holistique',
-      slug: 'aura-zen-spa-bien-etre',
-      headline: 'Un sanctuaire de douceur, réservation de rituels et vente de soins naturels.',
+      name: 'SERENA — Spa & Bien-Être',
+      slug: 'serena-spa-bien-etre',
+      headline: 'L’univers holistique et relaxation : soins naturels, massages du monde et rituels apaisants.',
       description: 'L’univers rêvé pour les centres de thalassothérapie, spas urbains et praticiens de massages ayurvédiques. Présentez vos soins signatures, vos cabines de relaxation et permettez à vos clients d’offrir des cartes cadeaux.',
       price: 219.00,
       category_id: 'beaute-bien-etre',
@@ -487,9 +487,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-minimal-mode',
-      name: 'Maison Épure — E-commerce Mode & Accessoires',
-      slug: 'maison-epure-mode-ecommerce',
-      headline: 'L’élégance minimaliste pour créateurs de mode, maroquinerie et prêt-à-porter.',
+      name: 'ÉPURE — Mode & Prêt-à-Porter',
+      slug: 'epure-mode-pret-a-porter',
+      headline: 'L’univers de la mode contemporaine : coupes architecturales, matières durables et maroquinerie fine.',
       description: 'Une boutique e-commerce de calibre international. Parfaitement optimisée pour la mise en valeur des looks, avec gestion complète des tailles/coloris, panier tiroir rapide, paiement Stripe et gestion des collections saisonnières.',
       price: 269.00,
       category_id: 'ecommerce',
@@ -514,9 +514,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-gourmet-bio',
-      name: 'Terroir & Saveurs — Épicerie Fine & Gastronomie',
-      slug: 'terroir-saveurs-epicerie-fine',
-      headline: 'Vendez vos produits du terroir, paniers gourmands et vins d’artisans en direct.',
+      name: 'TERROIR — Gastronomie Fine',
+      slug: 'terroir-gastronomie-fine',
+      headline: 'L’univers des saveurs authentiques : épicerie d’exception, produits bio de nos régions et grands crus.',
       description: 'Conçu spécialement pour les producteurs locaux, épiceries fines, chocolatiers et négociants en vin. Mettez en avant l’origine géographique, les labels BIO/AOC et stimulez le panier moyen.',
       price: 239.00,
       category_id: 'ecommerce',
@@ -540,9 +540,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-shopelios-energy',
-      name: 'Shopelios — Énergie, Pellets de Bois & Poêles',
-      slug: 'shopelios-energie-bois-pellets',
-      headline: 'Vente en ligne de granulés de bois, combustibles écologiques et poêles à haute efficacité.',
+      name: 'IGNIS — Énergie & Bois',
+      slug: 'ignis-energie-bois',
+      headline: 'L’univers du chauffage durable : granulés de bois certifiés DINplus, bûches compressées et poêles.',
       description: 'Inspiré des plus grandes boutiques de chauffage durable. Idéal pour distributeurs de granulés, bûches compressées et poêles. Inclut le calcul de livraison par palette avec déchargement au transpalette et gestion des stocks en temps réel.',
       price: 269.00,
       category_id: 'ecommerce',
@@ -566,9 +566,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-topgart-garden',
-      name: 'TopGart — Jardin, Motoculture & Outillage d’Extérieur',
-      slug: 'topgart-jardin-motoculture',
-      headline: 'Équipements d’extérieur robustes, tondeuses, tronçonneuses et outillage professionnel.',
+      name: 'TERRA — Espaces Verts & Outillage',
+      slug: 'terra-espaces-verts-outillage',
+      headline: 'L’univers de la motoculture & du plein air : outillage robuste, tondeuses autotractées et équipement pro.',
       description: 'L’univers de référence pour les revendeurs de matériel de jardinage, motoculture et entretien d’espaces verts. Présentation percutante des garanties, pièces détachées et comparateur de motorisations.',
       price: 259.00,
       category_id: 'ecommerce',
@@ -591,9 +591,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-lenha-design',
-      name: 'Lenha — Poêles Contemporains & Chauffage Scandinave',
-      slug: 'lenha-poeles-contemporains-scandinaves',
-      headline: 'Design épuré, atmosphère chaleureuse et confort thermique haut de gamme.',
+      name: 'NORDIC — Poêles & Design',
+      slug: 'nordic-poeles-design',
+      headline: 'L’univers du feu scandinave : poêles contemporains, foyers épurés et label Flamme Verte 7 étoiles.',
       description: 'Conçu avec une direction artistique minimaliste et scandinave. Met en valeur les lignes élégantes des poêles à bois et à granulés, l’écologie et l’art de vivre hygge.',
       price: 279.00,
       category_id: 'ecommerce',
@@ -616,9 +616,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-gamingbm-esport',
-      name: 'GamingBM — PC Gamer, Setups Esport & Hardware',
-      slug: 'gamingbm-pc-gamer-esport-hardware',
-      headline: 'L’univers gaming par excellence : setups cyberpunk, hardware puissant et accessoires pro.',
+      name: 'AURA — Gaming',
+      slug: 'aura-gaming',
+      headline: 'L’univers gaming & esport par excellence : setups cyberpunk, hardware sur-mesure et périphériques compétitifs.',
       description: 'Une identité visuelle dark mode percutante avec néons bleus/violets. Optimisé pour la vente de tours gaming assemblées, cartes graphiques, claviers mécaniques RGB, écrans 240Hz et fauteuils gaming.',
       price: 289.00,
       category_id: 'ecommerce',
@@ -642,9 +642,9 @@ function seedInitialData(db: DatabaseSync) {
     },
     {
       id: 'tpl-hlg-appliances',
-      name: 'HLG — Électroménager Haut de Gamme & Maison',
-      slug: 'hlg-electromenager-maison-pro',
-      headline: 'Fiabilité, sobriété et performance pour les équipements électroménagers du foyer.',
+      name: 'KRONOS — Électroménager & Cuisine',
+      slug: 'kronos-electromenager-cuisine',
+      headline: 'L’univers de la cuisine et du confort domestique : appareils encastrables, silence et durabilité.',
       description: 'Boutique moderne et fonctionnelle axée sur la clarté et la confiance. Présentation soignée des classes énergétiques, des dimensions d’encastrement et des options d’extension de garantie.',
       price: 249.00,
       category_id: 'ecommerce',
@@ -668,17 +668,17 @@ function seedInitialData(db: DatabaseSync) {
   ];
 
   const insertTpl = db.prepare(`
-    INSERT OR IGNORE INTO templates (id, name, slug, headline, description, price, category_id, sub_category_id, type, thumbnail_url, features_json)
+    INSERT OR REPLACE INTO templates (id, name, slug, headline, description, price, category_id, sub_category_id, type, thumbnail_url, features_json)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
   const insertScr = db.prepare(`
-    INSERT OR IGNORE INTO template_screenshots (id, template_id, page_name, image_url, sort_order)
+    INSERT OR REPLACE INTO template_screenshots (id, template_id, page_name, image_url, sort_order)
     VALUES (?, ?, ?, ?, ?)
   `);
 
   const insertBlueprint = db.prepare(`
-    INSERT OR IGNORE INTO template_blueprint_pages (id, template_id, slug, title, is_home, sort_order, sections_json)
+    INSERT OR REPLACE INTO template_blueprint_pages (id, template_id, slug, title, is_home, sort_order, sections_json)
     VALUES (?, ?, ?, ?, ?, ?, ?)
   `);
 
@@ -756,1028 +756,516 @@ function seedInitialData(db: DatabaseSync) {
   `).run(demoSiteId, demoSiteId, demoSiteId);
 }
 
-// Generate rich standard sections for blueprints
+// Generate rich standard sections for blueprints (Landing + 3 Annex pages per template)
 function getTemplateBlueprintPages(templateId: string, type: string, templateName: string) {
   const brandName = templateName.split('—')[0].trim();
 
-  // 1. SHOPELIOS - Énergie & Pellets de Bois
-  if (templateId === 'tpl-shopelios-energy') {
-    return [
-      {
-        slug: '',
-        title: 'Accueil (Boutique Énergie)',
-        is_home: 1,
-        sort_order: 0,
-        sections: [
-          {
-            type: 'header',
-            name: 'En-tête & Navigation',
-            settings: {
-              brandName: 'Shopelios Énergie',
-              navLinks: [
-                { label: 'Accueil', url: '/' },
-                { label: 'Pellets & Granulés', url: '/boutique' },
-                { label: 'Bûches Compressées', url: '/boutique' },
-                { label: 'Calculateur Livraison', url: '/livraison' },
-                { label: 'Contact', url: '/contact' }
-              ],
-              ctaButtonText: 'Commander ma palette',
-              ctaButtonLink: '/boutique'
-            },
-            styles: { bgColor: '#ffffff', textColor: '#111827' }
-          },
-          {
-            type: 'hero',
-            name: 'Hero Pellets & Bois de Chauffage',
-            settings: {
-              title: 'Granulés de Bois Certifiés DINplus & Bûches Compressées',
-              subtitle: 'Combustibles écologiques haute performance livrés à domicile par palette avec déchargement transpalette tout-terrain.',
-              ctaPrimaryText: 'Voir les palettes en stock',
-              ctaPrimaryLink: '/boutique',
-              ctaSecondaryText: 'Estimer la livraison',
-              ctaSecondaryLink: '/livraison',
-              bgImageUrl: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80',
-              overlayOpacity: 55,
-              alignment: 'center'
-            },
-            styles: { paddingTop: '90px', paddingBottom: '90px', textColor: '#ffffff' }
-          },
-          {
-            type: 'features',
-            name: 'Engagements & Certifications Bois',
-            settings: {
-              tagline: 'QUALITÉ SUPÉRIEURE',
-              heading: 'Pourquoi commander vos granulés chez Shopelios ?',
-              items: [
-                {
-                  icon: 'Award',
-                  title: 'Certification DINplus & ENplus A1',
-                  description: '100% résineux non traités, pouvoir calorifique > 4.9 kWh/kg et taux de cendre ultra faible < 0.5%.'
-                },
-                {
-                  icon: 'Compass',
-                  title: 'Livraison avec Chariot Embarqué',
-                  description: 'Déchargement directement dans votre garage ou abri même sur pente ou terrain gravillonné.'
-                },
-                {
-                  icon: 'ShieldCheck',
-                  title: 'Tarifs Dégressifs par Volume',
-                  description: 'Remises attractives dès 2 palettes et facilités de paiement en 3x ou 4x sans frais.'
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'products_grid',
-            name: 'Catalogue Combustibles & Palettes',
-            settings: {
-              tagline: 'PRODUITS DISPONIBLES',
-              heading: 'Nos Combustibles Bois en Stock Immédiat',
-              description: 'Commandez en ligne et planifiez votre créneau de livraison avec notre chauffeur.'
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#ffffff' }
-          },
-          {
-            type: 'cta_banner',
-            name: 'Bannière Calculateur de Frais de Port',
-            settings: {
-              title: 'Estimez vos frais de port par code postal',
-              subtitle: 'Indiquez votre localisation pour afficher la date de livraison garantie et les options de déchargement.',
-              buttonText: 'Calculer mes frais de port',
-              buttonLink: '/livraison'
-            },
-            styles: { bgColor: '#14532d', textColor: '#ffffff', paddingTop: '70px', paddingBottom: '70px' }
-          },
-          {
-            type: 'testimonials',
-            name: 'Avis Clients Chauffage',
-            settings: {
-              tagline: 'AVIS VÉRIFIÉS',
-              heading: 'Ce que disent nos foyers chauffés au bois',
-              items: [
-                {
-                  author: 'Laurent B.',
-                  role: 'Propriétaire d’un poêle à pellets à Chambéry',
-                  content: 'Très bonne combustion, aucune poussière dans les sacs et le livreur a déposé la palette au fond de mon garage sans effort. Je recommande vivement !',
-                  rating: 5
-                },
-                {
-                  author: 'Isabelle M.',
-                  role: 'Cliente fidèle depuis 3 saisons à Annecy',
-                  content: 'Bûches compressées impeccables pour la nuit. Chaleur durable et service client très réactif au téléphone.',
-                  rating: 5
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'footer',
-            name: 'Pied de Page',
-            settings: {
-              copyright: `© ${new Date().getFullYear()} Shopelios Énergie. Propulsé par HELPot.`,
-              columns: [
-                {
-                  title: 'Rayons',
-                  links: [
-                    { label: 'Granulés de Bois', url: '/boutique' },
-                    { label: 'Bûches de Jour & Nuit', url: '/boutique' },
-                    { label: 'Livraison & Dépôt', url: '/livraison' }
-                  ]
-                },
-                {
-                  title: 'Informations',
-                  links: [
-                    { label: 'Certificats DINplus', url: '/qualite' },
-                    { label: 'Mentions Légales', url: '/mentions-legales' }
-                  ]
-                }
-              ]
-            },
-            styles: { bgColor: '#0f172a', textColor: '#94a3b8' }
-          }
-        ]
-      }
-    ];
-  }
-
-  // 2. TOPGART - Jardin & Motoculture
-  if (templateId === 'tpl-topgart-garden') {
-    return [
-      {
-        slug: '',
-        title: 'Accueil (Motoculture & Jardin)',
-        is_home: 1,
-        sort_order: 0,
-        sections: [
-          {
-            type: 'header',
-            name: 'En-tête & Navigation',
-            settings: {
-              brandName: 'TopGart Motoculture',
-              navLinks: [
-                { label: 'Accueil', url: '/' },
-                { label: 'Tondeuses', url: '/boutique' },
-                { label: 'Tronçonneuses', url: '/boutique' },
-                { label: 'Taille-haies', url: '/boutique' },
-                { label: 'Atelier & Pièces', url: '/sav' },
-                { label: 'Contact', url: '/contact' }
-              ],
-              ctaButtonText: 'Voir le matériel',
-              ctaButtonLink: '/boutique'
-            },
-            styles: { bgColor: '#ffffff', textColor: '#111827' }
-          },
-          {
-            type: 'hero',
-            name: 'Hero Outillage Extérieur',
-            settings: {
-              title: 'Outillage de Jardin Professionnel & Motoculture Robuste',
-              subtitle: 'Des machines puissantes, testées et réglées en atelier pour tous vos travaux d’élagage, tonte et entretien d’espaces verts.',
-              ctaPrimaryText: 'Découvrir nos machines',
-              ctaPrimaryLink: '/boutique',
-              ctaSecondaryText: 'Conseils & SAV',
-              ctaSecondaryLink: '/sav',
-              bgImageUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1400&q=80',
-              overlayOpacity: 55,
-              alignment: 'center'
-            },
-            styles: { paddingTop: '90px', paddingBottom: '90px', textColor: '#ffffff' }
-          },
-          {
-            type: 'features',
-            name: 'Garanties & Savoir-Faire Motoculture',
-            settings: {
-              tagline: 'FIABILITÉ ÉPROUVÉE',
-              heading: 'L’engagement qualité TopGart',
-              items: [
-                {
-                  icon: 'ShieldCheck',
-                  title: 'Garantie Constructeur 2 à 5 ans',
-                  description: 'Prise en charge intégrale pièces et main d’œuvre par notre réseau d’ateliers agréés partout en France.'
-                },
-                {
-                  icon: 'Compass',
-                  title: 'Machines Préparées en Atelier',
-                  description: 'Chaque équipement est assemblé, contrôlé et démarré par nos mécaniciens avant expédition.'
-                },
-                {
-                  icon: 'Award',
-                  title: 'Pièces Détachées Disponibles 10 ans',
-                  description: 'Assurez la longévité de votre matériel avec des lames, chaînes et filtres d’origine en stock.'
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'products_grid',
-            name: 'Équipements Phares',
-            settings: {
-              tagline: 'CATALOGUE MATÉRIEL',
-              heading: 'Machines & Outils de Jardinage Prêts à l’Emploi',
-              description: 'Tondeuses autotractées, tronçonneuses thermiques et taille-haies sans fil.'
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#ffffff' }
-          },
-          {
-            type: 'cta_banner',
-            name: 'Bannière Atelier & SAV',
-            settings: {
-              title: 'Besoin d’aide pour choisir votre motorisation ?',
-              subtitle: 'Thermique, électrique ou batterie : nos techniciens espaces verts vous orientent selon la taille de votre terrain.',
-              buttonText: 'Contacter nos experts',
-              buttonLink: '/contact'
-            },
-            styles: { bgColor: '#c2410c', textColor: '#ffffff', paddingTop: '70px', paddingBottom: '70px' }
-          },
-          {
-            type: 'testimonials',
-            name: 'Avis Paysagistes & Particuliers',
-            settings: {
-              tagline: 'TÉMOIGNAGES',
-              heading: 'Ils entretiennent leurs espaces avec TopGart',
-              items: [
-                {
-                  author: 'Guillaume R.',
-                  role: 'Paysagiste indépendant en Dordogne',
-                  content: 'La tronçonneuse 52cc tourne tous les jours sans faillir. Démarrage EasyStart très appréciable et couple moteur parfait pour le débitage.',
-                  rating: 5
-                },
-                {
-                  author: 'Alain D.',
-                  role: 'Particulier avec 3500m² de terrain',
-                  content: 'Tondeuse reçue avec l’huile et la notice claire. Carter robuste et le mulching laisse une pelouse nette.',
-                  rating: 5
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'footer',
-            name: 'Pied de Page',
-            settings: {
-              copyright: `© ${new Date().getFullYear()} TopGart Motoculture. Propulsé par HELPot.`,
-              columns: [
-                {
-                  title: 'Matériel',
-                  links: [
-                    { label: 'Tondeuses Autotractées', url: '/boutique' },
-                    { label: 'Tronçonneuses & Guide', url: '/boutique' },
-                    { label: 'Taille-haies Lithium', url: '/boutique' }
-                  ]
-                },
-                {
-                  title: 'Services',
-                  links: [
-                    { label: 'Atelier de Révision', url: '/sav' },
-                    { label: 'Garanties & Pièces', url: '/garanties' }
-                  ]
-                }
-              ]
-            },
-            styles: { bgColor: '#0f172a', textColor: '#94a3b8' }
-          }
-        ]
-      }
-    ];
-  }
-
-  // 3. LENHA - Poêles Scandinaves Contemporains
-  if (templateId === 'tpl-lenha-design') {
-    return [
-      {
-        slug: '',
-        title: 'Accueil (Poêles & Foyers Scandinaves)',
-        is_home: 1,
-        sort_order: 0,
-        sections: [
-          {
-            type: 'header',
-            name: 'En-tête & Navigation',
-            settings: {
-              brandName: 'Lenha Poêles',
-              navLinks: [
-                { label: 'Accueil', url: '/' },
-                { label: 'Poêles à Bois', url: '/boutique' },
-                { label: 'Poêles à Granulés', url: '/boutique' },
-                { label: 'Accessoires Design', url: '/boutique' },
-                { label: 'Devis & Installation RGE', url: '/installation' },
-                { label: 'Contact', url: '/contact' }
-              ],
-              ctaButtonText: 'Demander une étude 3D',
-              ctaButtonLink: '/installation'
-            },
-            styles: { bgColor: '#ffffff', textColor: '#111827' }
-          },
-          {
-            type: 'hero',
-            name: 'Hero Scandinavian Fireplace',
-            settings: {
-              title: 'Poêles Scandinaves Contemporains & Foyers Haute Efficacité',
-              subtitle: 'Sublimez votre intérieur avec l’élégance intemporelle du design nordique, un rendement supérieur à 82% et le label Flamme Verte 7 étoiles.',
-              ctaPrimaryText: 'Découvrir la collection',
-              ctaPrimaryLink: '/boutique',
-              ctaSecondaryText: 'Simuler mes aides MaPrimeRénov',
-              ctaSecondaryLink: '/installation',
-              bgImageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=80',
-              overlayOpacity: 50,
-              alignment: 'center'
-            },
-            styles: { paddingTop: '95px', paddingBottom: '95px', textColor: '#ffffff' }
-          },
-          {
-            type: 'features',
-            name: 'Excellence Nordique & Écologie',
-            settings: {
-              tagline: 'L’ART DU FEU',
-              heading: 'Performance thermique et respect de l’environnement',
-              items: [
-                {
-                  icon: 'Award',
-                  title: 'Label Flamme Verte 7 Étoiles',
-                  description: 'Émissions de particules fines quasi nulles et éligibilité immédiate aux subventions énergétiques de l’État.'
-                },
-                {
-                  icon: 'ShieldCheck',
-                  title: 'Installation Agréée RGE Qualibois',
-                  description: 'Pose soignée selon le DTU 24.1, raccordement fumisterie et mise en service complète assurée par des artisans certifiés.'
-                },
-                {
-                  icon: 'Compass',
-                  title: 'Conception Fonte & Acier Corten',
-                  description: 'Corps de chauffe à forte inertie thermique restituant une chaleur douce et enveloppante pendant des heures.'
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'products_grid',
-            name: 'Collection Poêles & Accessoires',
-            settings: {
-              tagline: 'SÉLECTION PREMIUM',
-              heading: 'Nos Poêles Contemporains en Exposition',
-              description: 'Lignes épurées, vitre galbée panoramique et programmation intelligente Wi-Fi.'
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#ffffff' }
-          },
-          {
-            type: 'cta_banner',
-            name: 'Bannière Dimensionnement kW',
-            settings: {
-              title: 'Quelle puissance en kW convient à votre surface ?',
-              subtitle: 'Nos thermiciens réalisent gratuitement le calcul de déperdition thermique de votre pièce de vie.',
-              buttonText: 'Lancer mon calcul de puissance',
-              buttonLink: '/installation'
-            },
-            styles: { bgColor: '#1c1917', textColor: '#ffffff', paddingTop: '70px', paddingBottom: '70px' }
-          },
-          {
-            type: 'testimonials',
-            name: 'Avis Clients Intérieurs Chaleureux',
-            settings: {
-              tagline: 'SATISFACTION',
-              heading: 'La douceur scandinave au cœur de leur salon',
-              items: [
-                {
-                  author: 'Benoît & Camille T.',
-                  role: 'Rénovation maison d’architecte à Strasbourg',
-                  content: 'Le poêle Oslo 8.5kW est une merveille. Le spectacle de la vitre galbée est hypnotisant et le pilotage smartphone à distance permet d’arriver dans une maison déjà chaude.',
-                  rating: 5
-                },
-                {
-                  author: 'Éric V.',
-                  role: 'Chalet de montagne à Megève',
-                  content: 'Chaleur par rayonnement très agréable et consommation de granulés minime par rapport à nos anciens convecteurs.',
-                  rating: 5
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'footer',
-            name: 'Pied de Page',
-            settings: {
-              copyright: `© ${new Date().getFullYear()} Lenha Poêles Scandinaves. Propulsé par HELPot.`,
-              columns: [
-                {
-                  title: 'Collections',
-                  links: [
-                    { label: 'Poêles à Bois', url: '/boutique' },
-                    { label: 'Poêles à Granulés', url: '/boutique' },
-                    { label: 'Serviteurs & Rangements', url: '/boutique' }
-                  ]
-                },
-                {
-                  title: 'Projet',
-                  links: [
-                    { label: 'Aides MaPrimeRénov', url: '/installation' },
-                    { label: 'Contact Atelier', url: '/contact' }
-                  ]
-                }
-              ]
-            },
-            styles: { bgColor: '#0f172a', textColor: '#94a3b8' }
-          }
-        ]
-      }
-    ];
-  }
-
-  // 4. GAMINGBM - PC Gamer, Setups Esport & Hardware
+  // 1. AURA — GAMING
   if (templateId === 'tpl-gamingbm-esport') {
-    return [
-      {
-        slug: '',
-        title: 'Accueil (Esport & Cyber Setup)',
-        is_home: 1,
-        sort_order: 0,
-        sections: [
-          {
-            type: 'header',
-            name: 'En-tête Cyber Navigation',
-            settings: {
-              brandName: 'GamingBM Esport',
-              navLinks: [
-                { label: 'Accueil', url: '/' },
-                { label: 'PC Gamer Prémontés', url: '/boutique' },
-                { label: 'Périphériques RGB', url: '/boutique' },
-                { label: 'Écrans 240Hz', url: '/boutique' },
-                { label: 'Benchmarks FPS', url: '/benchmarks' },
-                { label: 'Assistance VIP', url: '/contact' }
-              ],
-              ctaButtonText: 'Configurer mon PC',
-              ctaButtonLink: '/boutique'
-            },
-            styles: { bgColor: '#090d16', textColor: '#f8fafc' }
-          },
-          {
-            type: 'hero',
-            name: 'Hero Cyberpunk Gamer',
-            settings: {
-              title: 'PC Gamer Cyber Titan, Setups Esport & Hardware Ultime',
-              subtitle: 'Des configurations sur-mesure d’élite propulsées par RTX 4080 et i9. Câblage chirurgical, watercooling silencieux et tests de charge 48h sous benchmarks extrêmes.',
-              ctaPrimaryText: 'Acheter un PC Gamer',
-              ctaPrimaryLink: '/boutique',
-              ctaSecondaryText: 'Voir les scores FPS',
-              ctaSecondaryLink: '/benchmarks',
-              bgImageUrl: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1400&q=80',
-              overlayOpacity: 65,
-              alignment: 'center'
-            },
-            styles: { paddingTop: '95px', paddingBottom: '95px', textColor: '#ffffff' }
-          },
-          {
-            type: 'features',
-            name: 'Garanties Compétition & Benchmarks',
-            settings: {
-              tagline: 'HARDWARE SANS COMPROMIS',
-              heading: 'Pourquoi les joueurs compétitifs choisissent GamingBM',
-              items: [
-                {
-                  icon: 'ShieldCheck',
-                  title: 'Banc d’Essai FurMark & Cinebench 48h',
-                  description: 'Chaque tour assemblée est soumise à un stress-test intensif pour garantir une stabilité totale en plein tournoi.'
-                },
-                {
-                  icon: 'Award',
-                  title: 'Garantie 3 ans Enlèvement sur Site',
-                  description: 'En cas de panne d’un composant, nous envoyons un transporteur dédié récupérer et renvoyer votre machine réparée.'
-                },
-                {
-                  icon: 'Compass',
-                  title: 'Zéro Pixel Mort & Composants 100% Neufs',
-                  description: 'Dalles IPS calibrées d’usine et matériel scellé d’origine constructeur avec factures individuelles.'
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#0b1120' }
-          },
-          {
-            type: 'products_grid',
-            name: 'Configs & Accessoires Gaming',
-            settings: {
-              tagline: 'RAYON ESPORT',
-              heading: 'Tours Gamer & Périphériques Haut de Gamme',
-              description: 'Machines de combat prêtes à brancher avec Windows 11 Pro activé et pilotes à jour.'
-            },
-            styles: { 
-              paddingTop: '80px', 
-              paddingBottom: '80px', 
-              bgColor: '#070b13', 
-              textColor: '#f8fafc',
-              cardBgColor: '#0f172a',
-              cardBorderColor: '#1e293b',
-              cardTextColor: '#f8fafc'
-            }
-          },
-          {
-            type: 'cta_banner',
-            name: 'Bannière FPS Performance Guarantee',
-            settings: {
-              title: '+240 FPS Constants en 1440p Ultra sur les plus grands titres',
-              subtitle: 'Warzone, Apex Legends, Valorant, Cyberpunk 2077 : profitez d’une fluidité sans saccade avec compatibilité G-Sync et DLSS 3.5.',
-              buttonText: 'Voir le tableau comparatif FPS',
-              buttonLink: '/benchmarks'
-            },
-            styles: { bgColor: '#4c1d95', textColor: '#ffffff', paddingTop: '70px', paddingBottom: '70px' }
-          },
-          {
-            type: 'testimonials',
-            name: 'Avis Joueurs & Streamers',
-            settings: {
-              tagline: 'COMMUNAUTÉ GAMING',
-              heading: 'Ce que pensent les créateurs et joueurs esport',
-              items: [
-                {
-                  author: 'Maxime "NexZ" G.',
-                  role: 'Streamer Twitch & joueur Valorant',
-                  content: 'Le Cyber Titan ne chauffe pas d’un degré même après 10h de stream continu en 1440p. Cable management ultra propre à l’intérieur du boîtier.',
-                  rating: 5
-                },
-                {
-                  author: 'Sébastien L.',
-                  role: 'Joueur passionné de simulation simracing',
-                  content: 'Triple écran géré à merveille sans le moindre stuttering. Emballage avec mousse expansée à l’intérieur du PC très rassurant !',
-                  rating: 5
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#0b1120' }
-          },
-          {
-            type: 'footer',
-            name: 'Pied de Page Cyber',
-            settings: {
-              copyright: `© ${new Date().getFullYear()} GamingBM Hardware. Propulsé par HELPot.`,
-              columns: [
-                {
-                  title: 'Hardware',
-                  links: [
-                    { label: 'PC Gamer RTX 4080', url: '/boutique' },
-                    { label: 'Claviers Mécaniques', url: '/boutique' },
-                    { label: 'Écrans Fast IPS 240Hz', url: '/boutique' }
-                  ]
-                },
-                {
-                  title: 'Support',
-                  links: [
-                    { label: 'Garantie & SAV', url: '/garantie' },
-                    { label: 'Discord Communautaire', url: '/discord' }
-                  ]
-                }
-              ]
-            },
-            styles: { bgColor: '#030712', textColor: '#64748b' }
-          }
-        ]
-      }
-    ];
+    return buildUniversePages({
+      templateId,
+      brandName: 'AURA Gaming',
+      primaryColor: '#8b5cf6',
+      darkTheme: true,
+      heroTitle: 'PC Gamer Cyber Titan, Setups Esport & Hardware Ultime',
+      heroSubtitle: 'Machines de guerre calibrées pour la compétition. Benchmarks 48h certifiés, câblage chirurgical et fluidité absolue sans compromis.',
+      heroImage: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1400&q=80',
+      catalogSlug: 'boutique',
+      catalogTitle: 'Rayon Esport & Hardware',
+      catalogSubtitle: 'Tours assemblées avec RTX 4080, claviers opto-mécaniques RGB et écrans Fast IPS 240Hz.',
+      universeTitle: 'L’Exigence Esport au service des compétiteurs',
+      universeSubtitle: 'Découvrez notre atelier d’assemblage, nos protocoles thermiques et notre banc de test 48h.',
+      contactTitle: 'Support Technique & Devis Setup Sur-Mesure',
+      featuresTagline: 'HARDWARE SANS COMPROMIS',
+      featuresHeading: 'Pourquoi les joueurs compétitifs choisissent AURA',
+      featuresItems: [
+        { icon: 'ShieldCheck', title: 'Banc d’Essai FurMark 48h', description: 'Chaque tour subit des tests de charge intensifs garantissant une stabilité sans faille en tournoi.' },
+        { icon: 'Award', title: 'Garantie 3 ans Enlèvement', description: 'Enlèvement gratuit sur site et prise en charge rapide en cas d’incident matériel.' },
+        { icon: 'Compass', title: 'Zéro Pixel Mort & Composants Neufs', description: 'Dalles calibrées d’usine et matériel scellé d’origine constructeur avec factures individuelles.' }
+      ],
+      testimonials: [
+        { author: 'Maxime "NexZ" G.', role: 'Streamer Twitch & joueur Valorant', content: 'Le Cyber Titan ne dépasse jamais 62°C même après 10h de stream intensif en 1440p. Finition irréprochable.', rating: 5 },
+        { author: 'Sébastien L.', role: 'Compétiteur Simracing', content: 'Triple écran géré avec une fluidité exceptionnelle. Le packaging avec mousse expansée à l’intérieur est très pro.', rating: 5 }
+      ],
+      ctaTitle: '+240 FPS Constants en 1440p Ultra sur vos jeux favoris',
+      ctaSubtitle: 'Warzone, Apex Legends, Valorant, Cyberpunk 2077 : rejoignez l’élite des compétiteurs.',
+      ctaButton: 'Configurer mon PC de combat',
+      ctaBg: '#4c1d95'
+    });
   }
 
-  // 5. HLG - Électroménager Haut de Gamme & Encastrable
+  // 2. IGNIS — ÉNERGIE
+  if (templateId === 'tpl-shopelios-energy') {
+    return buildUniversePages({
+      templateId,
+      brandName: 'IGNIS Énergie',
+      primaryColor: '#15803d',
+      darkTheme: false,
+      heroTitle: 'Granulés de Bois Certifiés DINplus & Bûches Compressées',
+      heroSubtitle: 'Combustibles écologiques haute performance livrés à domicile par palette avec déchargement transpalette tout-terrain.',
+      heroImage: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80',
+      catalogSlug: 'boutique',
+      catalogTitle: 'Pellets & Granulés',
+      catalogSubtitle: 'Palettes complètes et sacs individuels de granulés résineux certifiés DINplus et ENplus A1.',
+      universeTitle: 'L’Énergie Bois Écologique & Responsable',
+      universeSubtitle: 'Une sélection de combustibles 100% naturels issus de forêts gérées durablement sans aucun additif chimique.',
+      contactTitle: 'Service Client & Commande par Palette',
+      featuresTagline: 'QUALITÉ CERTIFIÉE',
+      featuresHeading: 'Pourquoi choisir IGNIS pour votre chauffage',
+      featuresItems: [
+        { icon: 'Award', title: 'Certifications DINplus & ENplus A1', description: 'Pouvoir calorifique supérieur > 4.9 kWh/kg, humidité < 8% et taux de cendre minimal < 0.5%.' },
+        { icon: 'Compass', title: 'Livraison Chariot Embarqué', description: 'Déchargement directement dans votre garage ou abri même sur pente ou terrain gravillonné.' },
+        { icon: 'ShieldCheck', title: 'Tarifs Dégressifs par Volume', description: 'Remises attractives dès 2 palettes et facilités de paiement en 3x ou 4x sans frais.' }
+      ],
+      testimonials: [
+        { author: 'Laurent B.', role: 'Foyer équipé à Chambéry', content: 'Très faible résidu de cendres et le chauffeur a déposé la palette au fond de mon garage sans effort.', rating: 5 },
+        { author: 'Isabelle M.', role: 'Cliente fidèle à Annecy', content: 'Bûches compressées idéales pour la nuit. Chaleur durable et service client très professionnel.', rating: 5 }
+      ],
+      ctaTitle: 'Estimez vos frais de livraison par code postal',
+      ctaSubtitle: 'Calcul immédiat des délais garantis et des options de déchargement sur votre propriété.',
+      ctaButton: 'Calculer la livraison',
+      ctaBg: '#14532d'
+    });
+  }
+
+  // 3. TERRA — ESPACES VERTS
+  if (templateId === 'tpl-topgart-garden') {
+    return buildUniversePages({
+      templateId,
+      brandName: 'TERRA Espaces Verts',
+      primaryColor: '#ea580c',
+      darkTheme: false,
+      heroTitle: 'Outillage de Jardin Professionnel & Motoculture Robuste',
+      heroSubtitle: 'Tondeuses autotractées, tronçonneuses thermiques et taille-haies conçus pour résister aux travaux d’espaces verts les plus exigeants.',
+      heroImage: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1400&q=80',
+      catalogSlug: 'boutique',
+      catalogTitle: 'Matériel Motoculture',
+      catalogSubtitle: 'Tondeuses thermiques, outillage sans fil 20V et tronçonneuses prêtes à démarrer.',
+      universeTitle: 'La Passion des Espaces Verts & de la Mécanique',
+      universeSubtitle: 'Chaque équipement est inspecté, réglé et graissé par nos techniciens avant expédition.',
+      contactTitle: 'Atelier Mécanique & Conseils d’Achat',
+      featuresTagline: 'ROBUSTESSE & FIABILITÉ',
+      featuresHeading: 'L’engagement qualité TERRA',
+      featuresItems: [
+        { icon: 'ShieldCheck', title: 'Garantie Constructeur 2 à 5 ans', description: 'Prise en charge intégrale pièces et main d’œuvre par notre réseau national d’ateliers agréés.' },
+        { icon: 'Compass', title: 'Machines Réglées en Atelier', description: 'Chaque équipement est assemblé, contrôlé et démarré par nos mécaniciens avant départ.' },
+        { icon: 'Award', title: 'Pièces Disponibles 10 ans', description: 'Assurez la pérennité de vos outils avec des chaînes, lames et filtres d’origine en stock permanent.' }
+      ],
+      testimonials: [
+        { author: 'Guillaume R.', role: 'Paysagiste en Dordogne', content: 'La tronçonneuse 52cc démarre au quart de tour et délivre un couple impressionnant.', rating: 5 },
+        { author: 'Alain D.', role: 'Propriétaire de grand parc', content: 'Tondeuse reçue avec l’huile moteur et guide d’utilisation clair. Mulching impeccable.', rating: 5 }
+      ],
+      ctaTitle: 'Besoin d’aide pour choisir votre motorisation ?',
+      ctaSubtitle: 'Thermique, électrique ou batterie : nos spécialistes espaces verts vous guident selon votre terrain.',
+      ctaButton: 'Consulter nos experts',
+      ctaBg: '#c2410c'
+    });
+  }
+
+  // 4. NORDIC — POÊLES & DESIGN
+  if (templateId === 'tpl-lenha-design') {
+    return buildUniversePages({
+      templateId,
+      brandName: 'NORDIC Poêles',
+      primaryColor: '#c2410c',
+      darkTheme: false,
+      heroTitle: 'Poêles Scandinaves Contemporains & Foyers Haute Efficacité',
+      heroSubtitle: 'Sublimez votre intérieur avec l’élégance intemporelle du design nordique, un rendement supérieur à 82% et le label Flamme Verte 7 étoiles.',
+      heroImage: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=80',
+      catalogSlug: 'boutique',
+      catalogTitle: 'Collection Poêles & Foyers',
+      catalogSubtitle: 'Modèles à bois et granulés avec vitres panoramiques galbées et programmation Wi-Fi.',
+      universeTitle: 'L’Art de Vivre Hygge & la Maîtrise du Feu',
+      universeSubtitle: 'Une esthétique pure mariant fonte scandinave et acier corten pour une chaleur douce et enveloppante.',
+      contactTitle: 'Demande d’Étude Thermique & Devis RGE',
+      featuresTagline: 'ÉLÉGANCE NORDIQUE',
+      featuresHeading: 'Performance thermique et respect de l’environnement',
+      featuresItems: [
+        { icon: 'Award', title: 'Label Flamme Verte 7 Étoiles', description: 'Émissions de particules quasi nulles et éligibilité immédiate aux subventions MaPrimeRénov.' },
+        { icon: 'ShieldCheck', title: 'Pose Agréée RGE Qualibois', description: 'Installation conforme DTU 24.1, raccordement fumisterie et mise en service certifiée.' },
+        { icon: 'Compass', title: 'Inertie Fonte & Double Combustion', description: 'Chaleur par rayonnement restituée pendant plusieurs heures après l’extinction du feu.' }
+      ],
+      testimonials: [
+        { author: 'Benoît & Camille T.', role: 'Rénovation maison d’architecte', content: 'Le poêle Oslo est magnifique. La programmation smartphone est un bonheur au quotidien.', rating: 5 },
+        { author: 'Éric V.', role: 'Chalet de montagne à Megève', content: 'Rendement exceptionnel et consommation de bois divisée par deux par rapport à notre ancien foyer.', rating: 5 }
+      ],
+      ctaTitle: 'Quelle puissance en kW choisir pour votre surface ?',
+      ctaSubtitle: 'Nos thermiciens calculent gratuitement la puissance idéale selon l’isolation de votre habitat.',
+      ctaButton: 'Simuler ma puissance requise',
+      ctaBg: '#1c1917'
+    });
+  }
+
+  // 5. KRONOS — ÉLECTROMÉNAGER
   if (templateId === 'tpl-hlg-appliances') {
-    return [
-      {
-        slug: '',
-        title: 'Accueil (Électroménager & Cuisine Pro)',
-        is_home: 1,
-        sort_order: 0,
-        sections: [
-          {
-            type: 'header',
-            name: 'En-tête & Navigation',
-            settings: {
-              brandName: 'HLG Électroménager',
-              navLinks: [
-                { label: 'Accueil', url: '/' },
-                { label: 'Fours & Cuisson', url: '/boutique' },
-                { label: 'Froid & Réfrigération', url: '/boutique' },
-                { label: 'Lavage & Silence', url: '/boutique' },
-                { label: 'Forfait Installation', url: '/installation' },
-                { label: 'Contact', url: '/contact' }
-              ],
-              ctaButtonText: 'Voir les équipements',
-              ctaButtonLink: '/boutique'
-            },
-            styles: { bgColor: '#ffffff', textColor: '#111827' }
-          },
-          {
-            type: 'hero',
-            name: 'Hero Cuisine & Électroménager',
-            settings: {
-              title: 'Électroménager Haut de Gamme, Encastrable & Confort Domestique',
-              subtitle: 'L’excellence des technologies silencieuses et économes en énergie pour sublimer votre cuisine. Garantie 5 ans et service de pose à domicile sur rendez-vous.',
-              ctaPrimaryText: 'Consulter le catalogue',
-              ctaPrimaryLink: '/boutique',
-              ctaSecondaryText: 'Nos services d’installation',
-              ctaSecondaryLink: '/installation',
-              bgImageUrl: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=80',
-              overlayOpacity: 50,
-              alignment: 'center'
-            },
-            styles: { paddingTop: '90px', paddingBottom: '90px', textColor: '#ffffff' }
-          },
-          {
-            type: 'features',
-            name: 'Engagements & Sérénité HLG',
-            settings: {
-              tagline: 'CONFORT & DURABILITÉ',
-              heading: 'Un service premium de la commande jusqu’à la pose',
-              items: [
-                {
-                  icon: 'ShieldCheck',
-                  title: 'Livraison & Mise en Service à Domicile',
-                  description: 'Livraison dans la pièce de votre choix, déballage, mise à niveau et raccordement électrique et eau par des techniciens qualifiés.'
-                },
-                {
-                  icon: 'Compass',
-                  title: 'Indice de Réparabilité > 8.5/10',
-                  description: 'Sélection d’appareils conçus pour durer avec pièces détachées d’origine garanties pendant au minimum 15 ans.'
-                },
-                {
-                  icon: 'Award',
-                  title: 'Reprise Gratuite de l’Ancien Appareil',
-                  description: 'Enlèvement de votre ancien matériel pour recyclage écologique certifié selon les normes environnementales.'
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'products_grid',
-            name: 'Sélection Électroménager',
-            settings: {
-              tagline: 'APPAREILS PHARES',
-              heading: 'Gros Électroménager Encastrable & Pose Libre',
-              description: 'Fours pyrolyse multifonctions, combinés réfrigérateurs Total NoFrost et lave-linges induction basse consommation.'
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#ffffff' }
-          },
-          {
-            type: 'cta_banner',
-            name: 'Bannière Garantie Totale 5 ans',
-            settings: {
-              title: 'Tranquillité absolue avec l’Extension Sérénité 5 ans',
-              subtitle: 'Pièces d’origine, déplacement et main d’œuvre inclus sans aucune franchise sur tous nos gros appareils.',
-              buttonText: 'Découvrir nos forfaits de garantie',
-              buttonLink: '/installation'
-            },
-            styles: { bgColor: '#0369a1', textColor: '#ffffff', paddingTop: '70px', paddingBottom: '70px' }
-          },
-          {
-            type: 'testimonials',
-            name: 'Avis Familles & Cuisinistes',
-            settings: {
-              tagline: 'CONFIANCE CLIENT',
-              heading: 'La satisfaction d’équipements performants et silencieux',
-              items: [
-                {
-                  author: 'Nathalie P.',
-                  role: 'Cuisine équipée neuve à Nantes',
-                  content: 'Le four pyrolyse chauffe de manière ultra homogène et le système de porte froide rassure avec les enfants. Les livreurs ont même repris le carton d’emballage !',
-                  rating: 5
-                },
-                {
-                  author: 'Frédéric M.',
-                  role: 'Appartement haussmannien à Bordeaux',
-                  content: 'Réfrigérateur NoFrost remarquablement silencieux dans ma cuisine ouverte. Clayettes solides et tiroir fraîcheur très spacieux.',
-                  rating: 5
-                }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'footer',
-            name: 'Pied de Page',
-            settings: {
-              copyright: `© ${new Date().getFullYear()} HLG Électroménager. Propulsé par HELPot.`,
-              columns: [
-                {
-                  title: 'Rayons',
-                  links: [
-                    { label: 'Fours Encastrables', url: '/boutique' },
-                    { label: 'Réfrigérateurs Silencieux', url: '/boutique' },
-                    { label: 'Lave-Linges Induction', url: '/boutique' }
-                  ]
-                },
-                {
-                  title: 'Services HLG',
-                  links: [
-                    { label: 'Forfait Pose & Raccordement', url: '/installation' },
-                    { label: 'Reprise Anciens Appareils', url: '/reprise' }
-                  ]
-                }
-              ]
-            },
-            styles: { bgColor: '#0f172a', textColor: '#94a3b8' }
-          }
-        ]
-      }
-    ];
+    return buildUniversePages({
+      templateId,
+      brandName: 'KRONOS Électroménager',
+      primaryColor: '#0284c7',
+      darkTheme: false,
+      heroTitle: 'Électroménager Connecté, Encastrable & Confort Domestique',
+      heroSubtitle: 'L’excellence des technologies silencieuses et économes en énergie pour sublimer votre cuisine. Garantie 5 ans et service de pose à domicile sur rendez-vous.',
+      heroImage: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=80',
+      catalogSlug: 'boutique',
+      catalogTitle: 'Appareils Encastrables & Froid',
+      catalogSubtitle: 'Fours pyrolyse multifonctions, combinés Total NoFrost et lave-linges induction basse consommation.',
+      universeTitle: 'La Précision Domestique & la Durabilité',
+      universeSubtitle: 'Des appareils haut de gamme conçus pour durer avec une sélection de marques aux indices de réparabilité exemplaires.',
+      contactTitle: 'Service Clientèle & Forfait Installation',
+      featuresTagline: 'CONFORT & DURABILITÉ',
+      featuresHeading: 'Un service premium de la commande à la mise en service',
+      featuresItems: [
+        { icon: 'ShieldCheck', title: 'Livraison & Mise en Service', description: 'Dépôt dans la pièce de votre choix, déballage, mise à niveau et raccordement par des experts.' },
+        { icon: 'Compass', title: 'Indice Réparabilité > 8.5/10', description: 'Disponibilité des pièces d’origine garantie pendant au minimum 15 ans.' },
+        { icon: 'Award', title: 'Reprise Gratuite de l’Ancien', description: 'Enlèvement de votre ancien équipement pour recyclage écologique certifié Éco-systèmes.' }
+      ],
+      testimonials: [
+        { author: 'Nathalie P.', role: 'Cuisine équipée neuve à Nantes', content: 'Le four pyrolyse chauffe de manière parfaitement homogène et la porte froide est très sécurisante.', rating: 5 },
+        { author: 'Frédéric M.', role: 'Appartement à Bordeaux', content: 'Réfrigérateur NoFrost remarquablement silencieux dans une cuisine ouverte sur le salon.', rating: 5 }
+      ],
+      ctaTitle: 'Tranquillité totale avec l’Extension Sérénité 5 ans',
+      ctaSubtitle: 'Pièces d’origine, déplacement et main d’œuvre inclus sans franchise sur tout le gros électroménager.',
+      ctaButton: 'Découvrir nos forfaits garanties',
+      ctaBg: '#0369a1'
+    });
   }
 
-  // 6. GENERAL E-COMMERCE BLUEPRINTS (Mode, Alimentation, etc.)
-  if (type === 'ECOMMERCE') {
-    return [
-      {
-        slug: '',
-        title: 'Accueil (Boutique)',
-        is_home: 1,
-        sort_order: 0,
-        sections: [
-          {
-            type: 'header',
-            name: 'En-tête & Navigation',
-            settings: {
-              brandName,
-              navLinks: [
-                { label: 'Accueil', url: '/' },
-                { label: 'Catalogue', url: '/boutique' },
-                { label: 'Nouveautés', url: '/boutique' },
-                { label: 'Contact', url: '/contact' }
-              ],
-              ctaButtonText: 'Boutique',
-              ctaButtonLink: '/boutique'
-            },
-            styles: { bgColor: '#ffffff', textColor: '#111827' }
-          },
-          {
-            type: 'hero',
-            name: 'Bannière Boutique Principale',
-            settings: {
-              title: `Bienvenue sur la boutique ${brandName}`,
-              subtitle: 'Découvrez notre collection exclusive d’articles sélectionnés avec soin.',
-              ctaPrimaryText: 'Explorer les produits',
-              ctaPrimaryLink: '/boutique',
-              bgImageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80',
-              overlayOpacity: 45
-            },
-            styles: { paddingTop: '90px', paddingBottom: '90px', textColor: '#ffffff' }
-          },
-          {
-            type: 'products_grid',
-            name: 'Produits Phares',
-            settings: {
-              tagline: 'SÉLECTION OFFICIELLE',
-              heading: 'Nos Meilleures Ventes',
-              description: 'Commandez en ligne avec paiement 100% sécurisé et expédition express.'
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#ffffff' }
-          },
-          {
-            type: 'features',
-            name: 'Engagements Boutique',
-            settings: {
-              tagline: 'NOS ATOUTS',
-              heading: 'Pourquoi commander chez nous',
-              items: [
-                { icon: 'ShieldCheck', title: 'Paiement Sécurisé', description: 'Transactions chiffrées SSL avec Stripe et Apple Pay.' },
-                { icon: 'Compass', title: 'Livraison Rapide', description: 'Colis expédié sous 24 à 48h ouvrées avec suivi temps réel.' },
-                { icon: 'Award', title: 'Satisfait ou Remboursé', description: '14 jours pour changer d’avis et effectuer un retour simplifié.' }
-              ]
-            },
-            styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: '#f8fafc' }
-          },
-          {
-            type: 'footer',
-            name: 'Pied de Page',
-            settings: {
-              copyright: `© ${new Date().getFullYear()} ${brandName}. Propulsé par HELPot.`
-            },
-            styles: { bgColor: '#0f172a', textColor: '#94a3b8' }
-          }
-        ]
-      }
-    ];
+  // 6. SYLVA — ARTISANAT & BOIS
+  if (templateId === 'tpl-woodcraft-pro') {
+    return buildUniversePages({
+      templateId,
+      brandName: 'SYLVA Artisanat',
+      primaryColor: '#b45309',
+      darkTheme: false,
+      heroTitle: 'L’Art du Sur-Mesure et l’Exigence de l’Ébénisterie',
+      heroSubtitle: 'Des créations artisanales d’exception pensées pour sublimer vos espaces intérieurs : cuisines nobles, dressings et mobilier contemporain.',
+      heroImage: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=80',
+      catalogSlug: 'realisations',
+      catalogTitle: 'Galerie Réalisations',
+      catalogSubtitle: 'Cuisines d’art en chêne fumé, bibliothèques murales et agencements haut de gamme.',
+      universeTitle: 'L’Atelier & le Savoir-Faire Ébéniste',
+      universeSubtitle: 'Sélection d’essences nobles labellisées FSC et façonnage artisanal dans notre atelier lyonnais.',
+      contactTitle: 'Demande de Devis & Étude 3D Gratuite',
+      featuresTagline: 'SAVOIR-FAIRE UNIQUE',
+      featuresHeading: 'Pourquoi confier votre agencement à SYLVA',
+      featuresItems: [
+        { icon: 'Award', title: 'Bois Nobles Certifiés FSC', description: 'Chêne, noyer et frêne sélectionnés pour leur grain unique et finitions écologiques durables.' },
+        { icon: 'Compass', title: 'Étude 3D & Modélisation Réaliste', description: 'Visualisation de votre agencement avant lancement de la fabrication en atelier.' },
+        { icon: 'ShieldCheck', title: 'Garantie Décennale Complète', description: 'Assurance professionnelle couvrant l’ensemble de nos travaux de pose et menuiserie.' }
+      ],
+      testimonials: [
+        { author: 'Marc & Sophie V.', role: 'Propriétaires à Caluire', content: 'Une précision d’ajustement remarquable pour nos placards sous combles et la verrière en chêne.', rating: 5 },
+        { author: 'Élodie D.', role: 'Architecte d’intérieur', content: 'Mon atelier de référence depuis 4 ans pour tous mes chantiers haut de gamme.', rating: 5 }
+      ],
+      ctaTitle: 'Vous avez un projet d’agencement en tête ?',
+      ctaSubtitle: 'Contactez notre atelier pour une étude personnalisée avec plans 3D sans engagement.',
+      ctaButton: 'Demander mon devis gratuit',
+      ctaBg: '#1e293b'
+    });
   }
 
-  // 7. DEFAULT CRAFTSMANSHIP / SERVICE BLUEPRINT
+  // 7. BARON — SOINS & BARBIER
+  if (templateId === 'tpl-luxe-barber') {
+    return buildUniversePages({
+      templateId,
+      brandName: 'BARON Soins',
+      primaryColor: '#78350f',
+      darkTheme: false,
+      heroTitle: 'Le Sanctuaire du Soin Masculin & de la Coiffure d’Élite',
+      heroSubtitle: 'Rituels de rasage traditionnel à l’ancienne, coupes aux ciseaux de précision et soins capillaires botaniques dans une atmosphère feutrée.',
+      heroImage: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1400&q=80',
+      catalogSlug: 'soins',
+      catalogTitle: 'Carte des Soins & Tarifs',
+      catalogSubtitle: 'Forfaits coupe, taille de barbe au coupe-chou et soins complets du visage.',
+      universeTitle: 'L’Artisanat Barbier & l’Ambiance Privée',
+      universeSubtitle: 'Fauteuils cuir vintage, serviettes chaudes parfumées et produits cosmétiques artisanaux.',
+      contactTitle: 'Prise de Rendez-vous en Ligne',
+      featuresTagline: 'TRADITION & ÉLÉGANCE',
+      featuresHeading: 'L’expérience de soin BARON',
+      featuresItems: [
+        { icon: 'Award', title: 'Maîtres Barbiers Qualifiés', description: 'Techniques de coupe précises aux ciseaux et maîtrise du rasoir droit traditionnel.' },
+        { icon: 'Compass', title: 'Produits 100% Botaniques', description: 'Huiles de barbe bio, baumes nourrissants et shampoings sans sulfate fabriqués en France.' },
+        { icon: 'ShieldCheck', title: 'Hygiène & Confort Absolu', description: 'Stérilisation des instruments entre chaque client et serviettes en coton chaud.' }
+      ],
+      testimonials: [
+        { author: 'Julien B.', role: 'Client régulier à Paris', content: 'Le rituel serviette chaude et massage crânien est une pure parenthèse de détente.', rating: 5 }
+      ],
+      ctaTitle: 'Offrez un moment d’exception',
+      ctaSubtitle: 'Bons cadeaux personnalisés et réservation immédiate de créneau.',
+      ctaButton: 'Prendre rendez-vous',
+      ctaBg: '#27272a'
+    });
+  }
+
+  // 8. GENERAL UNIVERSES FALLBACK (Justicia, Serena, Épure, Terroir, etc.)
+  return buildUniversePages({
+    templateId,
+    brandName,
+    primaryColor: '#2563eb',
+    darkTheme: false,
+    heroTitle: `L’Univers ${brandName}`,
+    heroSubtitle: 'Des prestations d’excellence et une identité soignée pour sublimer vos projets.',
+    heroImage: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80',
+    catalogSlug: type === 'ECOMMERCE' ? 'boutique' : 'services',
+    catalogTitle: type === 'ECOMMERCE' ? 'Catalogue Produits' : 'Prestations & Tarifs',
+    catalogSubtitle: 'Découvrez notre gamme complète disponible immédiatement.',
+    universeTitle: `Les Valeurs de la Maison ${brandName}`,
+    universeSubtitle: 'Rigueur, écoute et excellence au service de votre satisfaction.',
+    contactTitle: 'Contactez notre équipe',
+    featuresTagline: 'ENGAGEMENTS & VALEURS',
+    featuresHeading: 'Pourquoi nous faire confiance',
+    featuresItems: [
+      { icon: 'ShieldCheck', title: 'Garantie de Qualité', description: 'Une rigueur constante et des matériaux nobles certifiés.' },
+      { icon: 'Compass', title: 'Accompagnement Dédié', description: 'Un interlocuteur unique à votre écoute pour chaque étape de votre démarche.' },
+      { icon: 'Award', title: 'Service Réactif', description: 'Prise en charge rapide de vos demandes et devis transparent.' }
+    ],
+    testimonials: [
+      { author: 'Claire M.', role: 'Cliente vérifiée', content: 'Un service d’un professionnalisme exemplaire du début à la fin.', rating: 5 }
+    ],
+    ctaTitle: 'Prêt à démarrer votre projet ?',
+    ctaSubtitle: 'Prenez contact avec notre équipe dès aujourd’hui pour une étude personnalisée.',
+    ctaButton: 'Prendre contact',
+    ctaBg: '#0f172a'
+  });
+}
+
+// Helper builder to generate 4 realistic pages per universe
+function buildUniversePages(cfg: any) {
+  const textColor = cfg.darkTheme ? '#f8fafc' : '#111827';
+  const bgColor = cfg.darkTheme ? '#090d16' : '#ffffff';
+  const cardBg = cfg.darkTheme ? '#0f172a' : '#ffffff';
+  const cardBorder = cfg.darkTheme ? '#1e293b' : '#e2e8f0';
+
+  const navLinks = [
+    { label: 'Accueil', url: '/' },
+    { label: cfg.catalogTitle, url: `/${cfg.catalogSlug}` },
+    { label: 'L’Univers', url: '/univers' },
+    { label: 'Contact', url: '/contact' }
+  ];
+
+  const headerSection = {
+    type: 'header',
+    name: 'En-tête & Navigation',
+    settings: {
+      brandName: cfg.brandName,
+      navLinks,
+      ctaButtonText: 'Nous contacter',
+      ctaButtonLink: '/contact'
+    },
+    styles: { bgColor, textColor }
+  };
+
+  const footerSection = {
+    type: 'footer',
+    name: 'Pied de Page',
+    settings: {
+      copyright: `© ${new Date().getFullYear()} ${cfg.brandName}. Tous droits réservés. Propulsé par HELPot.`,
+      columns: [
+        {
+          title: 'Explorer',
+          links: [
+            { label: 'Accueil', url: '/' },
+            { label: cfg.catalogTitle, url: `/${cfg.catalogSlug}` },
+            { label: 'Notre Univers', url: '/univers' }
+          ]
+        },
+        {
+          title: 'Assistance',
+          links: [
+            { label: 'Contact & Devis', url: '/contact' },
+            { label: 'Mentions Légales', url: '/mentions-legales' }
+          ]
+        }
+      ]
+    },
+    styles: { bgColor: cfg.darkTheme ? '#030712' : '#0f172a', textColor: '#94a3b8' }
+  };
+
   return [
+    // PAGE 1: ACCUEIL (LANDING)
     {
       slug: '',
-      title: 'Accueil (Landing)',
+      title: 'Accueil',
       is_home: 1,
       sort_order: 0,
       sections: [
-        {
-          type: 'header',
-          name: 'En-tête & Navigation',
-          settings: {
-            brandName,
-            logoUrl: '',
-            navLinks: [
-              { label: 'Accueil', url: '/' },
-              { label: 'Nos Réalisations', url: '/realisations' },
-              { label: 'Services & Tarifs', url: '/services' },
-              { label: 'À Propos', url: '/a-propos' },
-              { label: 'Contact & Devis', url: '/contact' }
-            ],
-            ctaButtonText: 'Demander un devis',
-            ctaButtonLink: '/contact'
-          },
-          styles: {
-            bgColor: '#ffffff',
-            textColor: '#111827',
-            sticky: true
-          }
-        },
+        headerSection,
         {
           type: 'hero',
           name: 'Hero Banner Principal',
           settings: {
-            title: 'L’art du sur-mesure et l’exigence de la perfection',
-            subtitle: 'Des créations artisanales d’exception pensées pour sublimer vos espaces intérieurs et extérieurs.',
-            ctaPrimaryText: 'Découvrir nos créations',
-            ctaPrimaryLink: '/realisations',
-            ctaSecondaryText: 'Prendre rendez-vous',
-            ctaSecondaryLink: '/contact',
-            bgImageUrl: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=80',
-            overlayOpacity: 50,
+            title: cfg.heroTitle,
+            subtitle: cfg.heroSubtitle,
+            ctaPrimaryText: `Découvrir ${cfg.catalogTitle}`,
+            ctaPrimaryLink: `/${cfg.catalogSlug}`,
+            ctaSecondaryText: 'L’Univers de la marque',
+            ctaSecondaryLink: '/univers',
+            bgImageUrl: cfg.heroImage,
+            overlayOpacity: cfg.darkTheme ? 65 : 52,
             alignment: 'center'
           },
-          styles: {
-            paddingTop: '96px',
-            paddingBottom: '96px',
-            textColor: '#ffffff'
-          }
+          styles: { paddingTop: '95px', paddingBottom: '95px', textColor: '#ffffff' }
         },
         {
           type: 'features',
-          name: 'Points Forts & Engagements',
+          name: 'Engagements & Points Forts',
           settings: {
-            tagline: 'NOTRE SAVOIR-FAIRE',
-            heading: 'Pourquoi confier votre projet à notre atelier ?',
-            items: [
-              {
-                icon: 'Award',
-                title: 'Matériaux Nobles & Durables',
-                description: 'Bois certifiés FSC et finitions artisanales écologiques garantissant une longévité inégalée.'
-              },
-              {
-                icon: 'Compass',
-                title: 'Étude 3D & Devis Gratuit',
-                description: 'Visualisation photoréaliste de votre projet avant fabrication et tarification transparente.'
-              },
-              {
-                icon: 'ShieldCheck',
-                title: 'Garantie Décennale',
-                description: 'Tous nos travaux d’agencement et de menuiserie bénéficient d’une assurance décennale complète.'
-              }
-            ]
+            tagline: cfg.featuresTagline,
+            heading: cfg.featuresHeading,
+            items: cfg.featuresItems
           },
-          styles: {
-            paddingTop: '80px',
-            paddingBottom: '80px',
-            bgColor: '#f9fafb'
-          }
+          styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: cfg.darkTheme ? '#0b1120' : '#f8fafc' }
         },
         {
-          type: 'showcase_grid',
-          name: 'Grille des Réalisations Phares',
+          type: 'products_grid',
+          name: 'Sélection Vedette',
           settings: {
-            tagline: 'PORTFOLIO',
-            heading: 'Nos derniers chantiers livrés',
-            description: 'Découvrez en images la diversité de nos agencements d’intérieur.',
-            items: [
-              {
-                title: 'Cuisine Contemporaine en Chêne Fumé',
-                category: 'Agencement Cuisine',
-                imageUrl: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80'
-              },
-              {
-                title: 'Bibliothèque Murale avec Échelle',
-                category: 'Mobilier Sur-Mesure',
-                imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80'
-              },
-              {
-                title: 'Dressing Ouvert & Rétro-Éclairé',
-                category: 'Chambre Parentale',
-                imageUrl: 'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=800&q=80'
-              }
-            ]
+            tagline: 'SÉLECTION OFFICIELLE',
+            heading: `Les Modèles Phares ${cfg.brandName}`,
+            description: 'Produits testés et recommandés par nos experts.'
           },
           styles: {
             paddingTop: '80px',
             paddingBottom: '80px',
-            bgColor: '#ffffff'
-          }
-        },
-        {
-          type: 'testimonials',
-          name: 'Avis Clients & Témoignages',
-          settings: {
-            tagline: 'CONFIANCE',
-            heading: 'Ce que nos clients disent de nous',
-            items: [
-              {
-                author: 'Marc & Sophie V.',
-                role: 'Propriétaires à Caluire',
-                content: 'Un travail d’une précision remarquable pour notre verrière et nos placards sur-mesure. Respect scrupuleux des délais et finitions impeccables.',
-                rating: 5
-              },
-              {
-                author: 'Élodie D.',
-                role: 'Architecte d’intérieur',
-                content: 'Je collabore avec l’atelier depuis 4 ans sur tous mes chantiers haut de gamme. Un vrai sens du détail et une écoute irréprochable.',
-                rating: 5
-              }
-            ]
-          },
-          styles: {
-            paddingTop: '80px',
-            paddingBottom: '80px',
-            bgColor: '#f8fafc'
+            bgColor,
+            textColor,
+            cardBgColor: cardBg,
+            cardBorderColor: cardBorder,
+            cardTextColor: textColor
           }
         },
         {
           type: 'cta_banner',
-          name: 'Bannière d’Appel à l’Action',
+          name: 'Bannière Appel à l’Action',
           settings: {
-            title: 'Vous avez un projet en tête ?',
-            subtitle: 'Contactez notre atelier dès aujourd’hui pour une étude personnalisée sans engagement.',
-            buttonText: 'Demander mon devis gratuit',
+            title: cfg.ctaTitle,
+            subtitle: cfg.ctaSubtitle,
+            buttonText: cfg.ctaButton,
             buttonLink: '/contact'
           },
-          styles: {
-            bgColor: '#1e293b',
-            textColor: '#ffffff',
-            paddingTop: '70px',
-            paddingBottom: '70px'
-          }
+          styles: { bgColor: cfg.ctaBg, textColor: '#ffffff', paddingTop: '70px', paddingBottom: '70px' }
         },
         {
-          type: 'footer',
-          name: 'Pied de Page',
+          type: 'testimonials',
+          name: 'Avis Clients & Retours',
           settings: {
-            copyright: `© ${new Date().getFullYear()} Tous droits réservés. Réalisé avec HELPot.`,
-            columns: [
-              {
-                title: 'Navigation',
-                links: [
-                  { label: 'Accueil', url: '/' },
-                  { label: 'Réalisations', url: '/realisations' },
-                  { label: 'Services', url: '/services' }
-                ]
-              },
-              {
-                title: 'Informations',
-                links: [
-                  { label: 'Mentions Légales', url: '/mentions-legales' },
-                  { label: 'Politique de Confidentialité', url: '/confidentialite' }
-                ]
-              }
-            ]
+            tagline: 'CONFIANCE & AVIS VÉRIFIÉS',
+            heading: 'Ce que pensent nos clients',
+            items: cfg.testimonials
           },
-          styles: {
-            bgColor: '#0f172a',
-            textColor: '#94a3b8'
-          }
-        }
+          styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: cfg.darkTheme ? '#0b1120' : '#f8fafc' }
+        },
+        footerSection
       ]
     },
+
+    // PAGE 2: CATALOGUE / BOUTIQUE / PRESTATIONS
     {
-      slug: 'services',
-      title: 'Services & Tarifs',
+      slug: cfg.catalogSlug,
+      title: cfg.catalogTitle,
       is_home: 0,
       sort_order: 1,
       sections: [
+        headerSection,
         {
           type: 'hero_simple',
-          name: 'Titre de page Services',
+          name: `Titre Rayon ${cfg.catalogTitle}`,
           settings: {
-            title: 'Nos Services & Prestations',
-            subtitle: 'Une gamme complète de solutions sur-mesure adaptées à chaque intérieur.'
+            title: `${cfg.catalogTitle} — ${cfg.brandName}`,
+            subtitle: cfg.catalogSubtitle
           },
-          styles: { bgColor: '#f8fafc', paddingTop: '60px', paddingBottom: '60px' }
+          styles: { bgColor: cfg.darkTheme ? '#0b1120' : '#f8fafc', paddingTop: '65px', paddingBottom: '65px' }
         },
         {
-          type: 'services_list',
-          name: 'Liste des prestations détaillées',
-          settings: { showPrices: true },
-          styles: { paddingTop: '60px', paddingBottom: '60px' }
-        }
+          type: 'products_grid',
+          name: 'Tous les Articles du Rayon',
+          settings: {
+            tagline: 'CATALOGUE INTÉGRAL',
+            heading: 'Tous nos équipements disponibles',
+            description: 'Filtrez et commandez vos articles avec expédition sécurisée.'
+          },
+          styles: {
+            paddingTop: '60px',
+            paddingBottom: '80px',
+            bgColor,
+            textColor,
+            cardBgColor: cardBg,
+            cardBorderColor: cardBorder,
+            cardTextColor: textColor
+          }
+        },
+        {
+          type: 'cta_banner',
+          name: 'Bannière Conseil d’Achat',
+          settings: {
+            title: 'Besoin d’un conseil avant de finaliser ?',
+            subtitle: 'Nos conseillers spécialisés vous guident selon vos exigences.',
+            buttonText: 'Échanger avec un conseiller',
+            buttonLink: '/contact'
+          },
+          styles: { bgColor: cfg.ctaBg, textColor: '#ffffff', paddingTop: '60px', paddingBottom: '60px' }
+        },
+        footerSection
       ]
     },
+
+    // PAGE 3: L'UNIVERS / HISTOIRE / ATELIER
+    {
+      slug: 'univers',
+      title: 'Notre Univers',
+      is_home: 0,
+      sort_order: 2,
+      sections: [
+        headerSection,
+        {
+          type: 'hero_simple',
+          name: 'Titre L’Univers',
+          settings: {
+            title: `L’Univers ${cfg.brandName}`,
+            subtitle: cfg.universeSubtitle
+          },
+          styles: { bgColor: cfg.darkTheme ? '#0b1120' : '#f8fafc', paddingTop: '65px', paddingBottom: '65px' }
+        },
+        {
+          type: 'features',
+          name: 'Standards & Savoir-Faire d’Atelier',
+          settings: {
+            tagline: 'SAVOIR-FAIRE & EXCELLENCE',
+            heading: cfg.universeTitle,
+            items: cfg.featuresItems
+          },
+          styles: { paddingTop: '80px', paddingBottom: '80px', bgColor }
+        },
+        {
+          type: 'testimonials',
+          name: 'Témoignages & Reconnaissance',
+          settings: {
+            tagline: 'NOTRE HISTOIRE',
+            heading: 'La satisfaction de notre communauté',
+            items: cfg.testimonials
+          },
+          styles: { paddingTop: '80px', paddingBottom: '80px', bgColor: cfg.darkTheme ? '#0b1120' : '#f8fafc' }
+        },
+        footerSection
+      ]
+    },
+
+    // PAGE 4: CONTACT & DEVIS
     {
       slug: 'contact',
       title: 'Contact & Devis',
       is_home: 0,
-      sort_order: 2,
+      sort_order: 3,
       sections: [
+        headerSection,
         {
           type: 'hero_simple',
-          name: 'Titre de page Contact',
+          name: 'Titre Page Contact',
           settings: {
-            title: 'Contactez-nous & Devis',
-            subtitle: 'Nous vous répondons sous 24 à 48 heures ouvrées.'
+            title: cfg.contactTitle,
+            subtitle: 'Nous vous répondons sous 24h ouvrées. Devis clair et personnalisé.'
           },
-          styles: { bgColor: '#f8fafc', paddingTop: '60px', paddingBottom: '60px' }
+          styles: { bgColor: cfg.darkTheme ? '#0b1120' : '#f8fafc', paddingTop: '65px', paddingBottom: '65px' }
         },
         {
           type: 'contact_form',
@@ -1785,11 +1273,336 @@ function getTemplateBlueprintPages(templateId: string, type: string, templateNam
           settings: {
             showPhone: true,
             showProjectDetails: true,
-            submitButtonText: 'Envoyer ma demande'
+            submitButtonText: 'Transmettre ma demande'
           },
-          styles: { paddingTop: '60px', paddingBottom: '60px' }
-        }
+          styles: { paddingTop: '50px', paddingBottom: '80px', bgColor }
+        },
+        footerSection
       ]
     }
+  ];
+}
+
+// Export demo products and services generator for live previews and checkout deep-clone
+export function getDemoProductsForTemplate(templateId: string): any[] {
+  if (templateId === 'tpl-gamingbm-esport') {
+    return [
+      {
+        id: 'prod-aura-1',
+        title: 'PC Gamer Cyber Titan - RTX 4080 & i9',
+        slug: 'pc-gamer-cyber-titan',
+        description: 'Config esport ultra puissante, 32GB DDR5, SSD NVMe 2TB, Watercooling 360mm RGB.',
+        price: 1999.00,
+        stock: 8,
+        is_featured: 1,
+        category_name: 'Configs Esport',
+        image: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-aura-2',
+        title: 'Clavier Mécanique RGB Hot-Swap',
+        slug: 'clavier-mecanique-rgb',
+        description: 'Switches optiques ultra-rapides, châssis aluminium brossé et repose-poignet magnétique.',
+        price: 129.90,
+        stock: 25,
+        is_featured: 1,
+        category_name: 'Périphériques',
+        image: 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-aura-3',
+        title: 'Écran Esport 240Hz 27" Fast IPS',
+        slug: 'ecran-esport-240hz',
+        description: 'Résolution QHD 1440p, temps de réponse 0.5ms, compatible G-Sync et HDR400.',
+        price: 349.00,
+        stock: 14,
+        is_featured: 1,
+        category_name: 'Écrans',
+        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80'
+      }
+    ];
+  }
+  if (templateId === 'tpl-shopelios-energy') {
+    return [
+      {
+        id: 'prod-ignis-1',
+        title: 'Palette de Granulés de Bois DINplus (66 sacs)',
+        slug: 'palette-pellets-66-sacs',
+        description: '100% résineux haute performance, pouvoir calorifique > 4.9 kWh/kg, livraison par palette.',
+        price: 419.00,
+        stock: 30,
+        is_featured: 1,
+        category_name: 'Pellets & Granulés',
+        image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-ignis-2',
+        title: 'Bûches de Bois Compressé Jour (Pack 96 bûches)',
+        slug: 'buches-bois-compresse',
+        description: '100% chêne et hêtre compressés sans colle ni additif. Combustion longue durée 2h par bûche.',
+        price: 389.00,
+        stock: 20,
+        is_featured: 1,
+        category_name: 'Combustibles',
+        image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-ignis-3',
+        title: 'Sac de Granulés à l’Unité 15kg ENplus A1',
+        slug: 'sac-pellets-15kg',
+        description: 'Pratique pour appoint ou tester la qualité de notre bois avant commande de palette.',
+        price: 7.90,
+        stock: 150,
+        is_featured: 0,
+        category_name: 'Pellets',
+        image: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=800&q=80'
+      }
+    ];
+  }
+  if (templateId === 'tpl-topgart-garden') {
+    return [
+      {
+        id: 'prod-terra-1',
+        title: 'Tronçonneuse Thermique Pro 52cc - Guide 50cm',
+        slug: 'tronconneuse-pro-52cc',
+        description: 'Moteur 2-temps haute compression, système de démarrage facile EasyStart et double frein de chaîne.',
+        price: 249.00,
+        stock: 14,
+        is_featured: 1,
+        category_name: 'Outillage Pro',
+        image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-terra-2',
+        title: 'Tondeuse Autotractée Mulching 160cc',
+        slug: 'tondeuse-autotractee-160cc',
+        description: 'Largeur de coupe 51cm, carter acier renforcé, bac de ramassage 65L et fonction éjection latérale.',
+        price: 429.00,
+        stock: 6,
+        is_featured: 1,
+        category_name: 'Tondeuses',
+        image: 'https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-terra-3',
+        title: 'Taille-Haie Sans Fil 20V Lithium',
+        slug: 'taille-haie-sans-fil-20v',
+        description: 'Lame double action découpée au laser 55cm, autonomie 90 min et poignée rotative 180°.',
+        price: 119.00,
+        stock: 20,
+        is_featured: 0,
+        category_name: 'Batterie 20V',
+        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80'
+      }
+    ];
+  }
+  if (templateId === 'tpl-lenha-design') {
+    return [
+      {
+        id: 'prod-nordic-1',
+        title: 'Poêle à Granulés Scandinave Oslo 8.5 kW',
+        slug: 'poele-granules-oslo',
+        description: 'Design épuré en fonte et acier corten, programmation Wi-Fi et réservoir 22kg silencieux.',
+        price: 2490.00,
+        stock: 5,
+        is_featured: 1,
+        category_name: 'Poêles à Granulés',
+        image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-nordic-2',
+        title: 'Poêle à Bois Contemporain Vitre Galbée',
+        slug: 'poele-bois-vitre-galbee',
+        description: 'Rendement exceptionnel 82%, label Flamme Verte 7 étoiles, double combustion propre.',
+        price: 1850.00,
+        stock: 7,
+        is_featured: 1,
+        category_name: 'Poêles à Bois',
+        image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-nordic-3',
+        title: 'Serviteur de Cheminée 4 Accessoires Acier Noir',
+        slug: 'serviteur-cheminee-acier',
+        description: 'Pinces, balai, pelle et tisonnier design sur pied lourd antidérapant.',
+        price: 149.00,
+        stock: 18,
+        is_featured: 0,
+        category_name: 'Accessoires Design',
+        image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80'
+      }
+    ];
+  }
+  if (templateId === 'tpl-hlg-appliances') {
+    return [
+      {
+        id: 'prod-kronos-1',
+        title: 'Four Encastrable Pyrolyse Chaleur Tournante Inox',
+        slug: 'four-pyrolyse-inox',
+        description: 'Volume XXL 73L, 12 modes de cuisson assistée, porte froide 4 vitres et fermeture douce.',
+        price: 599.00,
+        stock: 10,
+        is_featured: 1,
+        category_name: 'Fours & Cuisson',
+        image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-kronos-2',
+        title: 'Réfrigérateur Combiné Total NoFrost 360L',
+        slug: 'refrigerateur-nofrost-360l',
+        description: 'Compartiment fraîcheur 0°C pour viandes/poissons, compresseur inverter silencieux 35dB.',
+        price: 749.00,
+        stock: 6,
+        is_featured: 1,
+        category_name: 'Froid & Réfrigération',
+        image: 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-kronos-3',
+        title: 'Lave-Linge Induction Silencieux 9kg A+++',
+        slug: 'lave-linge-induction-9kg',
+        description: 'Programme vapeur anti-allergies, pesée automatique et départ différé 24h.',
+        price: 499.00,
+        stock: 12,
+        is_featured: 0,
+        category_name: 'Lavage & Soin',
+        image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=800&q=80'
+      }
+    ];
+  }
+  if (templateId === 'tpl-minimal-mode') {
+    return [
+      {
+        id: 'prod-epure-1',
+        title: 'Manteau Droit Laine Vierge & Cachemire',
+        slug: 'manteau-droit-laine-cachemire',
+        description: 'Coupe droite épurée, col tailleur et finitions coutures invisibles faites à la main.',
+        price: 289.00,
+        stock: 10,
+        is_featured: 1,
+        category_name: 'Manteaux & Vestes',
+        image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-epure-2',
+        title: 'Sac Bandoulière Cuir Grainé Tannage Végétal',
+        slug: 'sac-bandouliere-cuir-graine',
+        description: 'Fermoir aimanté en laiton brossé, bandoulière réglable et doublure coton biologique.',
+        price: 195.00,
+        stock: 15,
+        is_featured: 1,
+        category_name: 'Maroquinerie',
+        image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-epure-3',
+        title: 'Chemise Col Officier Popeline Bio',
+        slug: 'chemise-col-officier-popeline',
+        description: '100% coton biologique certifié GOTS, boutons nacre véritable et coupe décontractée.',
+        price: 89.00,
+        stock: 35,
+        is_featured: 0,
+        category_name: 'Chemises',
+        image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80'
+      }
+    ];
+  }
+  if (templateId === 'tpl-gourmet-bio') {
+    return [
+      {
+        id: 'prod-terroir-1',
+        title: 'Coffret Huile d’Olive AOP & Vinaigre Balsamique 12 ans',
+        slug: 'coffret-huile-olive-vinaigre-12ans',
+        description: 'Huile d’olive vierge extra extraite à froid en Provence et vinaigre traditionnel de Modène.',
+        price: 48.00,
+        stock: 25,
+        is_featured: 1,
+        category_name: 'Épicerie Fine',
+        image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-terroir-2',
+        title: 'Miel Sauvage de Montagne Non Filtré 500g',
+        slug: 'miel-sauvage-montagne-500g',
+        description: 'Récolté artisanalement dans les Alpes, texture crémeuse et arômes floraux intenses.',
+        price: 14.50,
+        stock: 40,
+        is_featured: 1,
+        category_name: 'Miels & Confitures',
+        image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'prod-terroir-3',
+        title: 'Sélection de Chocolats Grands Crus Équateur 72%',
+        slug: 'chocolats-grands-crus-72',
+        description: 'Fèves rares Pure Forastero, notes boisées et fruits secs. Fabrication artisanale bean-to-bar.',
+        price: 26.00,
+        stock: 30,
+        is_featured: 0,
+        category_name: 'Chocolaterie',
+        image: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=800&q=80'
+      }
+    ];
+  }
+
+  // Fallback demo products
+  return [
+    {
+      id: 'prod-demo-1',
+      title: 'Création Signature de l’Atelier',
+      slug: 'creation-signature-atelier',
+      description: 'L’excellence des finitions et le savoir-faire reconnu de notre marque.',
+      price: 149.00,
+      stock: 10,
+      is_featured: 1,
+      category_name: 'Nouveautés',
+      image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      id: 'prod-demo-2',
+      title: 'Édition Spéciale Numérotée',
+      slug: 'edition-speciale-numerotee',
+      description: 'Série limitée conçue avec passion et garantie constructeur 3 ans.',
+      price: 289.00,
+      stock: 5,
+      is_featured: 1,
+      category_name: 'Éditions Limitées',
+      image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80'
+    }
+  ];
+}
+
+export function getDemoServicesForTemplate(templateId: string): any[] {
+  if (templateId === 'tpl-woodcraft-pro') {
+    return [
+      { id: 'srv-1', title: 'Conception de Cuisines Sur-Mesure', description: 'Cuisines en chêne massif et noyer, plans de travail en granit et îlots centraux intégrés.', icon: 'Utensils', price_starting_at: 4500, duration: '2 à 3 semaines' },
+      { id: 'srv-2', title: 'Dressing & Bibliothèques Intégrées', description: 'Agencement optimisé du sol au plafond avec éclairages LED invisibles et ferrures amorties.', icon: 'BookOpen', price_starting_at: 2200, duration: '1 semaine' },
+      { id: 'srv-3', title: 'Escaliers Hélicoïdaux & Droits', description: 'Structures d’artisanat alliant métal noir et marches en bois massif verni haute résistance.', icon: 'Layers', price_starting_at: 3800, duration: '2 semaines' }
+    ];
+  }
+  if (templateId === 'tpl-luxe-barber') {
+    return [
+      { id: 'srv-1', title: 'Coupe Signature & Coiffage aux Ciseaux', description: 'Diagnostic personnalisé, shampoing massant et coiffage aux produits naturels.', icon: 'Scissors', price_starting_at: 35, duration: '45 min' },
+      { id: 'srv-2', title: 'Taille de Barbe & Rasage Traditionnel', description: 'Serviette chaude parfumée aux huiles essentielles, rasoir coupe-chou et baume apaisant.', icon: 'Award', price_starting_at: 28, duration: '30 min' },
+      { id: 'srv-3', title: 'Rituel Privilège Complet Homme', description: 'Coupe + taille de barbe + soin du visage purifiant et serviette fraîche.', icon: 'Sparkles', price_starting_at: 58, duration: '1h15' }
+    ];
+  }
+  if (templateId === 'tpl-juris-lex') {
+    return [
+      { id: 'srv-1', title: 'Audit Juridique & Conformité Entreprise', description: 'Analyse complète des risques contractuels, sociaux et réglementaires pour dirigeants.', icon: 'ShieldCheck', price_starting_at: 650, duration: '3 à 5 jours' },
+      { id: 'srv-2', title: 'Accompagnement Fusions, Cessions & Statuts', description: 'Rédaction d’actes d’avocat, pactes d’associés et opérations de restructuration.', icon: 'Compass', price_starting_at: 1800, duration: 'Sur mesure' },
+      { id: 'srv-3', title: 'Consultation Stratégique & Contentieux', description: 'Stratégie de défense précontentieuse et représentation devant les juridictions.', icon: 'Award', price_starting_at: 250, duration: '1 heure' }
+    ];
+  }
+  if (templateId === 'tpl-zen-spa') {
+    return [
+      { id: 'srv-1', title: 'Rituel Ayurvédique aux Huiles Chaudes 90min', description: 'Massage ancestral rééquilibrant les énergies et relâchant les tensions musculaires.', icon: 'Sparkles', price_starting_at: 120, duration: '1h30' },
+      { id: 'srv-2', title: 'Soin Visage Botanique Éclat & Jeunesse', description: 'Nettoyage en profondeur, gommage aux enzymes florales et masque hydratant bio.', icon: 'Compass', price_starting_at: 85, duration: '1h00' },
+      { id: 'srv-3', title: 'Accès Privatif Bains Japonais & Sauna', description: 'Bain chaud en cèdre, sauna finlandais et tisanerie biologique pour 2 personnes.', icon: 'Award', price_starting_at: 65, duration: '1h00' }
+    ];
+  }
+  return [
+    { id: 'srv-default-1', title: 'Prestation Personnalisée & Conseil', description: 'Étude complète de vos besoins avec devis détaillé sous 24h.', icon: 'Compass', price_starting_at: 150, duration: '1 jour' },
+    { id: 'srv-default-2', title: 'Réalisation Complète Clé en Main', description: 'Prise en charge intégrale de la conception à la pose finale.', icon: 'Award', price_starting_at: 1200, duration: '1 semaine' }
   ];
 }

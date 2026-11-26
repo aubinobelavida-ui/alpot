@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getDb } from '@/lib/db';
+import { getDb, getDemoProductsForTemplate, getDemoServicesForTemplate } from '@/lib/db';
 
 export async function GET(
   request: Request,
@@ -29,13 +29,26 @@ export async function GET(
       ORDER BY sort_order ASC
     `).all(template.id) as any[];
 
-    // Fetch blueprint pages
+    // Fetch blueprint pages with sections AST for live preview & deep-cloning
     const blueprintPages = db.prepare(`
-      SELECT id, slug, title, is_home, sort_order
+      SELECT id, slug, title, is_home, sort_order, sections_json
       FROM template_blueprint_pages
       WHERE template_id = ?
       ORDER BY sort_order ASC
     `).all(template.id) as any[];
+
+    const formattedPages = blueprintPages.map((p: any) => ({
+      id: p.id,
+      slug: p.slug,
+      title: p.title,
+      is_home: p.is_home,
+      sort_order: p.sort_order,
+      sections: p.sections_json ? JSON.parse(p.sections_json) : []
+    }));
+
+    // Demo catalog items tailored to this template's universe
+    const demoProducts = getDemoProductsForTemplate(template.id);
+    const demoServices = getDemoServicesForTemplate(template.id);
 
     return NextResponse.json({
       template: {
@@ -43,7 +56,9 @@ export async function GET(
         features: template.features_json ? JSON.parse(template.features_json) : []
       },
       screenshots,
-      availablePages: blueprintPages
+      availablePages: formattedPages,
+      demoProducts,
+      demoServices
     });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
